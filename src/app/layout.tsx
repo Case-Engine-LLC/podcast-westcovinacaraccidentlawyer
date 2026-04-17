@@ -1,5 +1,6 @@
 import type { Metadata } from 'next'
 import { Inter } from 'next/font/google'
+import { MarkerWidget } from '@/components/MarkerWidget'
 import './globals.css'
 import '@/themes/v1/variables.css'
 
@@ -23,6 +24,7 @@ export default function RootLayout({
     <html lang="en">
       <body className={`${inter.variable} font-sans antialiased`}>
         {children}
+        <MarkerWidget />
       </body>
     </html>
   )
