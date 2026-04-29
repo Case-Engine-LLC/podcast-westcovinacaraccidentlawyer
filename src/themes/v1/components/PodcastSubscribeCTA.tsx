@@ -14,19 +14,20 @@ const PodcastSubscribeCTA = () => {
           {/* Background Image */}
           <div className="absolute inset-0">
             <img
-              src="/hero-placeholder.jpg"
+              src="/ct-abg.jpg"
               alt="Background"
               className="w-full h-full object-cover"
             />
+            <div className="absolute inset-0 bg-primary/70" />
           </div>
 
-          {/* Yellow CTA Card */}
+          {/* CTA Card */}
           <div className="relative bg-secondary/95 rounded-3xl mx-4 md:mx-8 overflow-visible">
             <div className="grid grid-cols-1 md:grid-cols-5 items-end relative">
-              {/* Left Side - Image */}
+              {/* Left Side - Subject Cutout */}
               <div className="relative md:col-span-2 md:absolute md:left-0 md:bottom-0 md:w-2/5 flex justify-center md:justify-start order-2 md:order-1">
                 <img
-                  src="/about-placehoder.jpg"
+                  src="/cta-subject.png"
                   alt="Attorneys"
                   className="w-full max-w-[450px] md:max-w-[420px] h-auto object-contain"
                 />

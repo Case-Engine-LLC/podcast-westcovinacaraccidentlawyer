@@ -47,7 +47,7 @@ const FAQ = () => {
                 onClick={() => handleTabChange(index)}
                 className={`pb-3 px-4 whitespace-nowrap text-sm md:text-base font-semibold transition-all ${
                   activeTab === index
-                    ? 'text-[#FAA31A] border-b-2 border-[#FAA31A]'
+                    ? 'text-secondary border-b-2 border-secondary'
                     : 'text-gray-600 hover:text-gray-900'
                 }`}
               >

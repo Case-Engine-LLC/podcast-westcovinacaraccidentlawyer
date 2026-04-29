@@ -1,6 +1,7 @@
 'use client'
 
 import React from 'react'
+import { Star, ThumbsUp, Briefcase } from 'lucide-react'
 import { stats } from '@/data/siteData'
 
 const StatsBanner = () => {
@@ -8,40 +9,34 @@ const StatsBanner = () => {
     <section className="bg-white py-0 md:py-12">
       <div className="max-w-container mx-auto px-6 md:px-12">
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
-          {/* Card 1: Rating - Orange */}
-          <div className="bg-[#FAA31A] rounded-3xl px-6 py-8 md:px-5 md:py-10 text-left">
-            <p>
-              <span className="flex items-center justify-between mb-4 md:mb-6">
-                <span className="text-[#FFC564] text-4xl md:text-6xl font-bold">{stats.rating}</span>
-                <img src="/icons/stars.svg" alt="Stars" className="w-16 h-16 md:w-20 md:h-20" />
-              </span>
-              <span className="text-[#451F00] text-xl md:text-2xl font-bold mb-3 block">Positive Reviews</span>
-              <span className="text-[#451F00] text-sm md:text-base leading-relaxed">{stats.ratingVerbalization}</span>
-            </p>
+          {/* Card 1: Rating */}
+          <div className="bg-secondary rounded-3xl px-6 py-8 md:px-5 md:py-10 text-left">
+            <div className="flex items-center justify-between mb-4 md:mb-6">
+              <span className="text-white text-4xl md:text-6xl font-bold">{stats.rating}</span>
+              <Star size={56} className="text-white" fill="currentColor" />
+            </div>
+            <p className="text-white text-xl md:text-2xl font-bold mb-3">Positive Reviews</p>
+            <p className="text-white/85 text-sm md:text-base leading-relaxed">{stats.ratingVerbalization}</p>
           </div>
 
-          {/* Card 2: Satisfaction - Yellow */}
-          <div className="bg-[#FAA61A] rounded-3xl px-6 py-8 md:px-5 md:py-10 text-left">
-            <p>
-              <span className="flex items-center justify-between mb-4 md:mb-6">
-                <span className="text-[#10284B] text-4xl md:text-6xl font-bold">{stats.satisfactionRate}%</span>
-                <img src="/icons/like.svg" alt="Like" className="w-16 h-16 md:w-20 md:h-20" />
-              </span>
-              <span className="text-[#10284B] text-xl md:text-2xl font-bold mb-3 block">{stats.satisfactionLabel}</span>
-              <span className="text-[#10284B] text-sm md:text-base leading-relaxed">{stats.satisfactionVerbalization}</span>
-            </p>
+          {/* Card 2: Satisfaction */}
+          <div className="bg-primary rounded-3xl px-6 py-8 md:px-5 md:py-10 text-left">
+            <div className="flex items-center justify-between mb-4 md:mb-6">
+              <span className="text-secondary text-4xl md:text-6xl font-bold">{stats.satisfactionRate}%</span>
+              <ThumbsUp size={56} className="text-secondary" fill="currentColor" />
+            </div>
+            <p className="text-white text-xl md:text-2xl font-bold mb-3">{stats.satisfactionLabel}</p>
+            <p className="text-white/80 text-sm md:text-base leading-relaxed">{stats.satisfactionVerbalization}</p>
           </div>
 
-          {/* Card 3: Cases - Dark Blue */}
-          <div className="bg-[#10284B] rounded-3xl px-6 py-8 md:px-5 md:py-10 text-left">
-            <p>
-              <span className="flex items-center justify-between mb-4 md:mb-6">
-                <span className="text-[#FAA31A] text-4xl md:text-6xl font-bold">{stats.casesHandled}+</span>
-                <img src="/icons/case.svg" alt="Case" className="w-16 h-16 md:w-20 md:h-20" />
-              </span>
-              <span className="text-[#A3C9FF] text-xl md:text-2xl font-bold mb-3 block">{stats.casesLabel}</span>
-              <span className="text-[#A3C9FF] text-sm md:text-base leading-relaxed">{stats.casesVerbalization}</span>
-            </p>
+          {/* Card 3: Cases */}
+          <div className="bg-secondary rounded-3xl px-6 py-8 md:px-5 md:py-10 text-left">
+            <div className="flex items-center justify-between mb-4 md:mb-6">
+              <span className="text-white text-4xl md:text-6xl font-bold">{stats.casesHandled}+</span>
+              <Briefcase size={56} className="text-white" />
+            </div>
+            <p className="text-white text-xl md:text-2xl font-bold mb-3">{stats.casesLabel}</p>
+            <p className="text-white/85 text-sm md:text-base leading-relaxed">{stats.casesVerbalization}</p>
           </div>
         </div>
       </div>

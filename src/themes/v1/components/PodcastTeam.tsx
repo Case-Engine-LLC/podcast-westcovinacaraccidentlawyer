@@ -51,22 +51,19 @@ const PodcastTeam = () => {
           }
         }
       `}</style>
-      <section className="relative pt-40 md:pt-52 overflow-hidden">
-      {/* Background Image */}
-      <img
-        src="/hero-placeholder.jpg"
-        alt="Podcast Team"
-        className="absolute inset-0 w-full h-full object-cover"
-      />
-
-      {/* SVG Text Behind Attorneys */}
-      <div className="absolute inset-0 flex items-start justify-center pt-8 md:pt-12 px-8">
-        <img
-          src="/The Team Behind the podcast.svg"
-          alt="The Team Behind the Podcast"
-          title="The Team Behind the podcast"
-          className="w-full max-w-[900px] h-auto opacity-90"
-        />
+      <section className="relative bg-primary pt-20 md:pt-28 pb-16 md:pb-20 overflow-hidden">
+      {/* Section header */}
+      <div className="relative z-10 max-w-container mx-auto px-6 md:px-12 text-center mb-10 md:mb-14">
+        <div className="flex items-center justify-center gap-3 mb-4">
+          <div className="w-12 h-px bg-secondary" />
+          <span className="text-xs font-bold tracking-[0.25em] uppercase text-secondary">
+            The Team
+          </span>
+          <div className="w-12 h-px bg-secondary" />
+        </div>
+        <h2 className="text-3xl md:text-5xl font-bold text-white tracking-tight">
+          Behind the Podcast
+        </h2>
       </div>
 
       {/* Content */}
@@ -110,7 +107,7 @@ const PodcastTeam = () => {
                     e.stopPropagation()
                     // TODO: Navigate to episodes page
                   }}
-                  className="bg-[#FAA31A] hover:bg-[#e09000] text-white text-xs font-semibold px-3 py-1.5 rounded-full whitespace-nowrap"
+                  className="bg-secondary hover:bg-secondary-hover text-white text-xs font-semibold px-3 py-1.5 rounded-full whitespace-nowrap"
                 >
                   All Episodes
                 </button>
@@ -163,7 +160,7 @@ const PodcastTeam = () => {
         </div>
 
         {/* Desktop Grid */}
-        <div className="hidden md:grid grid-cols-2 gap-6">
+        <div className={`hidden md:grid gap-6 ${teamMembers.length === 1 ? 'grid-cols-1 max-w-2xl mx-auto' : 'grid-cols-2'}`}>
           {teamMembers.map((member, index) => (
             <div key={index} className="w-full flex justify-center items-end relative">
               <img
@@ -194,7 +191,7 @@ const PodcastTeam = () => {
                       e.stopPropagation()
                       // TODO: Navigate to episodes page
                     }}
-                    className="bg-[#FAA31A] hover:bg-[#e09000] text-white text-sm font-semibold px-4 py-2 rounded-full whitespace-nowrap"
+                    className="bg-secondary hover:bg-secondary-hover text-white text-sm font-semibold px-4 py-2 rounded-full whitespace-nowrap"
                   >
                     All Episodes
                   </button>

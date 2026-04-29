@@ -481,35 +481,35 @@ export const trustBadges = [
     "id": 1,
     "title": "Super Lawyers Rising Stars",
     "tooltip": "Super Lawyers Rising Stars recognizes outstanding attorneys who are 40 years old or younger or have been practicing for 10 years or less. Selection is based on peer recognition, professional achievement, and independent research by Super Lawyers. Only 2.5% of attorneys in each state receive this honor.",
-    "badge": "/badges/placeholder.avif",
+    "badge": "/badges/super-lawyers-rising-star.webp",
     "href": "#super-lawyers"
   },
   {
     "id": 2,
     "title": "AVVO Clients' Choice Award",
     "tooltip": "The AVVO Clients' Choice Award is presented to attorneys who have received consistently high ratings and positive reviews from clients. This recognition reflects exceptional client service, professional expertise, and a strong commitment to achieving favorable outcomes for personal injury victims.",
-    "badge": "/badges/placeholder.avif",
+    "badge": "/badges/avvo-clients-choice.png",
     "href": "#avvo-award"
   },
   {
     "id": 3,
     "title": "National Trial Lawyers Top 40 Under 40",
     "tooltip": "The National Trial Lawyers Top 40 Under 40 is an invitation-only organization composed of the top trial lawyers from each state who are under 40 years old. Membership is extended only to attorneys who demonstrate superior qualifications, trial results, and leadership in the legal profession.",
-    "badge": "/badges/placeholder.avif",
+    "badge": "/badges/national-trial-lawyers-top-40.png",
     "href": "#top-40"
   },
   {
     "id": 4,
     "title": "Million Dollar Advocates Forum",
     "tooltip": "The Million Dollar Advocates Forum is one of the most prestigious groups of trial lawyers in the United States. Membership is limited to attorneys who have won million-dollar verdicts and settlements for their clients. Fewer than 1% of U.S. lawyers are members of this distinguished organization.",
-    "badge": "/badges/placeholder.avif",
+    "badge": "/badges/million-dollar-advocates.gif",
     "href": "#million-dollar"
   },
   {
     "id": 5,
     "title": "American Institute of Legal Counsel 10 Best",
     "tooltip": "The American Institute of Legal Counsel recognizes the nation's top attorneys based on client satisfaction, peer recommendations, and professional achievement. The 10 Best designation is awarded to attorneys who demonstrate exceptional skill, ethics, and results in their practice area.",
-    "badge": "/badges/placeholder.avif",
+    "badge": "/badges/ailc-10-best.jpg",
     "href": "#10-best"
   }
 ];

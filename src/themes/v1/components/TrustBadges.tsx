@@ -23,14 +23,14 @@ const TrustBadges = () => {
             onClick={() => badge.href && window.location.assign(badge.href)}
           >
             {/* Badge */}
-            <div className="w-48 h-48 flex items-center justify-center">
+            <div className="h-20 flex items-center justify-center">
               {badge.badge ? (
                 <Image
                   src={badge.badge}
                   alt={badge.title}
                   width={192}
                   height={192}
-                  className="object-contain"
+                  className="h-20 w-auto object-contain"
                 />
               ) : (
                 <div className="w-16 h-16 rounded-full bg-gray-100 border-2 border-gray-300 flex items-center justify-center">
@@ -64,14 +64,14 @@ const TrustBadges = () => {
             onClick={() => badge.href && window.location.assign(badge.href)}
           >
             {/* Badge */}
-            <div className="w-48 h-48 flex items-center justify-center">
+            <div className="h-20 flex items-center justify-center">
               {badge.badge ? (
                 <Image
                   src={badge.badge}
                   alt={badge.title}
                   width={192}
                   height={192}
-                  className="object-contain"
+                  className="h-20 w-auto object-contain"
                 />
               ) : (
                 <div className="w-16 h-16 rounded-full bg-gray-100 border-2 border-gray-300 flex items-center justify-center">

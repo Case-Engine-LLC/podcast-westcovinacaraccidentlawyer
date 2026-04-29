@@ -110,8 +110,8 @@ const Testimonials = () => {
                             <Star
                               key={index}
                               size={24}
-                              fill="#FAA31A"
-                              stroke="#FAA31A"
+                              fill="var(--color-secondary)"
+                              stroke="var(--color-secondary)"
                             />
                           ))}
                         </div>

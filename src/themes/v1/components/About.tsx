@@ -20,7 +20,7 @@ const About = () => {
   }, [])
 
   return (
-    <section id="about" className="bg-white py-16 md:py-20">
+    <section id="about" className="about-section bg-white py-16 md:py-20">
       <div className="max-w-container mx-auto px-6 md:px-12">
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-12 items-start">
           {/* Left Content */}
@@ -73,7 +73,7 @@ const About = () => {
             <div className="mt-6 flex justify-center md:justify-start">
               <Link
                 href={siteConfig.formCTA?.href || '#form'}
-                className="inline-flex items-center gap-3 bg-secondary text-black px-8 py-4 rounded-2xl transition-transform hover:scale-105 font-bold"
+                className="inline-flex items-center gap-3 bg-secondary text-white px-8 py-4 rounded-2xl transition-transform hover:scale-105 font-bold"
               >
                 <FileText className="w-5 h-5" />
                 <span>{siteConfig.formCTA?.text || 'Free Consultation'}</span>
