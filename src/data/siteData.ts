@@ -6,6 +6,7 @@
 export const siteConfig = {
   "podcastName": "The Lem Garcia Accident Law Podcast",
   "tagline": "NEW EPISODE",
+  "podcastUrl": "https://podcast-westcovinacaraccidentlawyer.vercel.app",
   "platformLinks": {
     "apple": "#",
     "spotify": "#"
@@ -14,6 +15,28 @@ export const siteConfig = {
     "text": "Free Consultation",
     "href": "#form"
   }
+};
+
+export const compliance = {
+  "jurisdiction": "California",
+  "firm": "Lem Garcia Law - For Accidents and Injuries",
+  "responsibleAttorneys": [
+    { "name": "Lem Garcia", "barNumber": "288695" }
+  ],
+  "disclaimers": [
+    {
+      "kind": "general",
+      "text": "The information presented in The Lem Garcia Accident Law Podcast is general California legal information for educational purposes only and is not legal advice for your specific situation. Listening to this podcast does not create an attorney-client relationship with Lem Garcia or Lem Garcia Law - For Accidents and Injuries. For advice on your case, contact Lem Garcia Law at (626) 337-1111 for a free consultation."
+    },
+    {
+      "kind": "advertising",
+      "text": "This podcast is communication for advertising purposes only as defined by California Rules of Professional Conduct 7.1 through 7.5. Lem Garcia is the attorney responsible for the content (California Bar No. 288695). Past results do not guarantee a similar outcome. Every case is different and the results of any case depend on the specific facts and applicable law."
+    },
+    {
+      "kind": "no-guarantee",
+      "text": "No representation is made that the quality of legal services to be performed is greater than the quality of legal services performed by other lawyers. Prior results referenced in this podcast were achieved on behalf of clients in matters relating to those clients' specific facts and do not constitute a guarantee, warranty, or prediction regarding the outcome of any other legal matter."
+    }
+  ]
 };
 
 export const episode = {
@@ -26,8 +49,8 @@ export const episode = {
 
 export const attorney = {
   "name": "Lem Garcia",
-  "firm": "Lem Garcia Law",
-  "title": "Personal Injury Attorney",
+  "firm": "Lem Garcia Law - For Accidents and Injuries",
+  "title": "Founder & Personal Injury Attorney",
   "bio": [
     "Lem Garcia is a dedicated personal injury attorney serving West Covina and the greater San Gabriel Valley with a commitment to fighting for accident victims' rights. With extensive experience handling complex car accident, truck collision, and wrongful death cases, Lem Garcia has built a reputation for aggressive advocacy and compassionate client service. Lem Garcia understands that accidents can devastate families financially, physically, and emotionally, which is why Lem Garcia Law approaches each case with personalized attention and a determination to secure maximum compensation.",
     "Throughout his legal career, Lem Garcia has successfully represented hundreds of clients injured in motor vehicle accidents, pedestrian collisions, bicycle accidents, and premises liability cases. Lem Garcia's deep knowledge of California personal injury law, combined with his understanding of the local West Covina court system and insurance company tactics, allows him to build compelling cases that deliver results. Lem Garcia takes pride in being accessible to clients, explaining complex legal processes in clear terms, and keeping families informed every step of the way.",
@@ -39,7 +62,7 @@ export const attorney = {
 
 export const contact = {
   "address": "West Covina, California",
-  "phone": "(626) 602-9483",
+  "phone": "(626) 337-1111",
   "email": "contact@lemgarcialaw.com",
   "website": "https://www.lemgarcialaw.com"
 };
@@ -185,19 +208,30 @@ export const testimonials = [
   }
 ];
 
+// Per California RPC 7.1, numeric claims in lawyer advertising require
+// substantiation. The Bible (2026-04-27) flags the $1.1M settlement reference
+// as NEEDS CONFIRMATION — firm to authorize which case results to publish on-air
+// and how to anonymize. casesHandled / casesLabel reflect the firm's publicly
+// stated marketing position; rating / reviewCount should be re-pointed to
+// verified Google Business Profile counts before launch.
 export const stats = {
   "rating": 4.9,
   "reviewCount": 200,
   "satisfactionRate": 99,
   "satisfactionLabel": "Client Satisfaction Rate",
-  "satisfactionVerbalization": "Lem Garcia Law maintains a 99% client satisfaction rate, reflecting the firm's commitment to personalized service, transparent communication, and achieving favorable outcomes for injury victims throughout West Covina and Southern California.",
+  "satisfactionVerbalization": "TODO (CA RPC 7.1 substantiation): replace with verified third-party Google Business Profile rating data before launch. Numeric satisfaction claims require source citation.",
   "casesHandled": 100,
   "casesLabel": "$100M+ Recovered",
-  "casesVerbalization": "Lem Garcia has successfully recovered over $100 million in compensation for personal injury clients, helping accident victims secure the financial resources needed for medical treatment, lost wages, and rebuilding their lives after devastating injuries.",
-  "ratingVerbalization": "With a 4.9-star rating based on over 200 client reviews, Lem Garcia Law has earned a reputation as one of West Covina's most trusted personal injury law firms, known for compassionate representation and aggressive advocacy for injury victims."
+  "casesVerbalization": "Lem Garcia has recovered millions in compensation for personal injury clients. Past results do not guarantee a similar outcome — every case depends on its specific facts and applicable California law.",
+  "ratingVerbalization": "TODO (CA RPC 7.1 substantiation): re-point this rating and review count to the firm's verified Google Business Profile for West Covina before launch. Star-rating claims require citation to the verifiable source."
 };
 
-export const navigation = {
+export const navigation: {
+  logo: string
+  items: { name: string; href: string; external?: boolean }[]
+  ctaText: string
+  ctaHref: string
+} = {
   "logo": "Lem Garcia Law",
   "items": [
     {
@@ -211,6 +245,11 @@ export const navigation = {
     {
       "name": "Contact",
       "href": "#contact"
+    },
+    {
+      "name": "Lem's Bio",
+      "href": "https://lemgarcia.attorney",
+      "external": true
     }
   ],
   "ctaText": "Subscribe",
@@ -587,15 +626,28 @@ export const authorProfiles: Record<string, {
   "lem-garcia": {
     name: "Lem Garcia",
     slug: "lem-garcia",
-    title: "Personal Injury Attorney",
+    title: "Founder, Lem Garcia Law - For Accidents and Injuries",
     role: "Host & Lead Attorney",
     photo: "/images/attorney.jpg",
-    barNumber: "",
-    barUrl: "",
+    barNumber: "288695",
+    barUrl: "https://apps.calbar.ca.gov/attorney/Licensee/Detail/288695",
     education: [],
-    admissions: [],
+    admissions: [
+      { jurisdiction: "California", year: "" }
+    ],
     awards: [],
-    practiceAreas: [],
+    practiceAreas: [
+      "Car accidents",
+      "Truck accidents",
+      "Motorcycle accidents",
+      "Pedestrian accidents",
+      "Wrongful death",
+      "Dog bites",
+      "Slip and fall / premises liability",
+      "Rideshare accidents (Uber / Lyft)",
+      "Defective products",
+      "Work injuries (third-party liability)"
+    ],
     bio: [
       "Lem Garcia is a dedicated personal injury attorney serving West Covina and the greater San Gabriel Valley with a commitment to fighting for accident victims' rights. With extensive experience handling complex car accident, truck collision, and wrongful death cases, Lem Garcia has built a reputation for aggressive advocacy and compassionate client service. Lem Garcia understands that accidents can devastate families financially, physically, and emotionally, which is why Lem Garcia Law approaches each case with personalized attention and a determination to secure maximum compensation.",
       "Throughout his legal career, Lem Garcia has successfully represented hundreds of clients injured in motor vehicle accidents, pedestrian collisions, bicycle accidents, and premises liability cases. Lem Garcia's deep knowledge of California personal injury law, combined with his understanding of the local West Covina court system and insurance company tactics, allows him to build compelling cases that deliver results. Lem Garcia takes pride in being accessible to clients, explaining complex legal processes in clear terms, and keeping families informed every step of the way.",

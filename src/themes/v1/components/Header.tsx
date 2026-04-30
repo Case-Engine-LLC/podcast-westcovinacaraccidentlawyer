@@ -41,15 +41,30 @@ const Header = ({ variant = 'dark' }: HeaderProps) => {
 
         {/* Desktop Nav */}
         <nav className="hidden md:flex items-center gap-10 absolute left-1/2 -translate-x-1/2">
-          {navItems.map((item, index) => (
-            <Link
-              key={index}
-              href={item.href.startsWith('#') ? `/${item.href}` : item.href}
-              className={`text-base font-medium ${textColor} ${textHoverColor} transition-colors`}
-            >
-              {item.name}
-            </Link>
-          ))}
+          {navItems.map((item, index) => {
+            const isExternal =
+              (item as { external?: boolean }).external ||
+              /^https?:\/\//.test(item.href)
+            return isExternal ? (
+              <a
+                key={index}
+                href={item.href}
+                target="_blank"
+                rel="noopener noreferrer"
+                className={`text-base font-medium ${textColor} ${textHoverColor} transition-colors`}
+              >
+                {item.name}
+              </a>
+            ) : (
+              <Link
+                key={index}
+                href={item.href.startsWith('#') ? `/${item.href}` : item.href}
+                className={`text-base font-medium ${textColor} ${textHoverColor} transition-colors`}
+              >
+                {item.name}
+              </Link>
+            )
+          })}
         </nav>
 
         {/* Desktop Subscribe Button */}
@@ -74,16 +89,32 @@ const Header = ({ variant = 'dark' }: HeaderProps) => {
       {/* Mobile Nav Overlay */}
       {isMenuOpen && (
         <div className={`md:hidden ${mobileMenuBg} border-t ${mobileBorder} py-6 px-6 flex flex-col gap-6 shadow-xl`}>
-          {navItems.map((item, index) => (
-            <Link
-              key={index}
-              href={item.href.startsWith('#') ? `/${item.href}` : item.href}
-              className={`text-lg font-medium ${textColor}`}
-              onClick={() => setIsMenuOpen(false)}
-            >
-              {item.name}
-            </Link>
-          ))}
+          {navItems.map((item, index) => {
+            const isExternal =
+              (item as { external?: boolean }).external ||
+              /^https?:\/\//.test(item.href)
+            return isExternal ? (
+              <a
+                key={index}
+                href={item.href}
+                target="_blank"
+                rel="noopener noreferrer"
+                className={`text-lg font-medium ${textColor}`}
+                onClick={() => setIsMenuOpen(false)}
+              >
+                {item.name}
+              </a>
+            ) : (
+              <Link
+                key={index}
+                href={item.href.startsWith('#') ? `/${item.href}` : item.href}
+                className={`text-lg font-medium ${textColor}`}
+                onClick={() => setIsMenuOpen(false)}
+              >
+                {item.name}
+              </Link>
+            )
+          })}
           <Link
             href={navigation.ctaHref.startsWith('#') ? `/${navigation.ctaHref}` : navigation.ctaHref}
             className={`flex items-center justify-center px-6 py-3 rounded-lg text-base font-semibold ${buttonBg}`}

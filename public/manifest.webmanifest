@@ -1,0 +1,21 @@
+{
+  "name": "The Lem Garcia Accident Law Podcast",
+  "short_name": "Lem Garcia Law",
+  "description": "California personal injury attorney Lem Garcia breaks down car, truck, motorcycle, and rideshare accident cases across the San Gabriel Valley and North County San Diego.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#161E4C",
+  "theme_color": "#161E4C",
+  "icons": [
+    {
+      "src": "/icon",
+      "sizes": "32x32",
+      "type": "image/png"
+    },
+    {
+      "src": "/apple-icon",
+      "sizes": "180x180",
+      "type": "image/png"
+    }
+  ]
+}
