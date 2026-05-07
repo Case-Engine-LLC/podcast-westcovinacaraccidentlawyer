@@ -49,8 +49,10 @@ const EpisodeHero = ({ episode: propEpisode }: EpisodeHeroProps) => {
 
               {/* Platform Buttons */}
               <div className="flex flex-col sm:flex-row gap-4">
-                <Link
+                <a
                   href={siteConfig.platformLinks.apple}
+                  target="_blank"
+                  rel="noopener noreferrer"
                   className="flex items-center gap-3 px-6 py-4 bg-black text-white rounded-2xl transition-all hover:scale-105 w-full sm:w-auto sm:min-w-[15rem]"
                 >
                   <div className="w-8 h-8 flex items-center justify-center">
@@ -69,10 +71,12 @@ const EpisodeHero = ({ episode: propEpisode }: EpisodeHeroProps) => {
                     <div className="text-xs text-white/60 uppercase">Available on</div>
                     <div className="text-base font-bold text-white">Apple Podcast</div>
                   </div>
-                </Link>
+                </a>
 
-                <Link
+                <a
                   href={siteConfig.platformLinks.spotify}
+                  target="_blank"
+                  rel="noopener noreferrer"
                   className="flex items-center gap-3 px-6 py-4 bg-black text-white rounded-2xl transition-all hover:scale-105 w-full sm:w-auto sm:min-w-[15rem]"
                 >
                   <div className="w-8 h-8 flex items-center justify-center">
@@ -91,7 +95,7 @@ const EpisodeHero = ({ episode: propEpisode }: EpisodeHeroProps) => {
                     <div className="text-xs text-white/60 uppercase">Available on</div>
                     <div className="text-base font-bold text-white">Spotify</div>
                   </div>
-                </Link>
+                </a>
               </div>
             </div>
 
@@ -101,7 +105,7 @@ const EpisodeHero = ({ episode: propEpisode }: EpisodeHeroProps) => {
                 <img
                   src="/cover-placeholder.jpg"
                   alt={ep.title}
-                  className="w-full h-full object-cover"
+                  className="w-full h-full object-cover object-top"
                 />
               </div>
             </div>
