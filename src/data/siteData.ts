@@ -1,5 +1,5 @@
 /**
- * Site Data — Generated from Case Engine AI
+ * Site Data, Generated from Case Engine AI
  * Updated: 2026-03-10T16:38:49.475576+00:00
  */
 
@@ -14,7 +14,8 @@ export const siteConfig = {
   "formCTA": {
     "text": "Free Consultation",
     "href": "#form"
-  }
+  },
+  "firmUrl": "https://www.lemgarcialaw.com"
 };
 
 export const compliance = {
@@ -44,7 +45,8 @@ export const episode = {
   "title": "Understanding Your Rights After a Car Accident in West Covina",
   "date": "01.15.24",
   "duration": "00:45:30",
-  "description": "In this inaugural episode, Lem Garcia discusses the critical steps accident victims should take immediately following a collision in West Covina and throughout the San Gabriel Valley. Learn about California's comparative negligence laws, how insurance companies evaluate claims, and why having experienced legal representation can make the difference in your recovery. Lem shares real case examples and practical advice to help you protect your rights and maximize your compensation."
+  "description": "In this inaugural episode, Lem Garcia discusses the critical steps accident victims should take immediately following a collision in West Covina and throughout the San Gabriel Valley. Learn about California's comparative negligence laws, how insurance companies evaluate claims, and why having experienced legal representation can make the difference in your recovery. Lem shares real case examples and practical advice to help you protect your rights and maximize your compensation.",
+  "youtubeUrl": ""
 };
 
 export const attorney = {
@@ -210,7 +212,7 @@ export const testimonials = [
 
 // Per California RPC 7.1, numeric claims in lawyer advertising require
 // substantiation. The Bible (2026-04-27) flags the $1.1M settlement reference
-// as NEEDS CONFIRMATION — firm to authorize which case results to publish on-air
+// as NEEDS CONFIRMATION, firm to authorize which case results to publish on-air
 // and how to anonymize. casesHandled / casesLabel reflect the firm's publicly
 // stated marketing position; rating / reviewCount should be re-pointed to
 // verified Google Business Profile counts before launch.
@@ -222,7 +224,7 @@ export const stats = {
   "satisfactionVerbalization": "TODO (CA RPC 7.1 substantiation): replace with verified third-party Google Business Profile rating data before launch. Numeric satisfaction claims require source citation.",
   "casesHandled": 100,
   "casesLabel": "$100M+ Recovered",
-  "casesVerbalization": "Lem Garcia has recovered millions in compensation for personal injury clients. Past results do not guarantee a similar outcome — every case depends on its specific facts and applicable California law.",
+  "casesVerbalization": "Lem Garcia has recovered millions in compensation for personal injury clients. Past results do not guarantee a similar outcome, every case depends on its specific facts and applicable California law.",
   "ratingVerbalization": "TODO (CA RPC 7.1 substantiation): re-point this rating and review count to the firm's verified Google Business Profile for West Covina before launch. Star-rating claims require citation to the verifiable source."
 };
 
@@ -253,7 +255,7 @@ export const navigation: {
     }
   ],
   "ctaText": "Subscribe",
-  "ctaHref": "#subscribe"
+  "ctaHref": "#listen"
 };
 
 export const footer = {
@@ -343,7 +345,8 @@ export const episodes = [
       "Common Mistakes That Harm Your Claim",
       "When to Contact a Personal Injury Attorney"
     ],
-    "logo": "/images/logo.svg"
+    "logo": "/images/logo.svg",
+    "youtubeUrl": ""
   },
   {
     "id": 2,
@@ -369,7 +372,8 @@ export const episodes = [
       "Documenting Severe Injuries",
       "Maximizing Your Motorcycle Accident Settlement"
     ],
-    "logo": "/images/logo.svg"
+    "logo": "/images/logo.svg",
+    "youtubeUrl": ""
   }
 ];
 
@@ -391,24 +395,24 @@ export const topicalEntryGrid = {
       "label": "Car Accidents",
       "links": [
         {
-          "title": "Rear-End Collision Claims",
-          "description": "Learn about liability, common injuries, and compensation in rear-end car accidents on West Covina roads and California highways.",
-          "href": "#rear-end-collisions"
+          "title": "Car Accident Lawyer",
+          "description": "Lem Garcia represents drivers and passengers injured in West Covina collisions, San Gabriel Valley freeway crashes, and rear-end accidents across California.",
+          "href": "https://www.lemgarcialaw.com/law/lawyer/car-accident/"
         },
         {
-          "title": "Intersection Accident Cases",
-          "description": "Understanding fault determination and legal options when car accidents occur at West Covina intersections and traffic signals.",
-          "href": "#intersection-accidents"
+          "title": "Rear-End Collision Claims",
+          "description": "Learn about liability, common injuries, and compensation in rear-end car accidents and whether you can sue when fault appears clear.",
+          "href": "https://www.lemgarcialaw.com/law/lawyer/car-accident/can-you-sue-for-a-rear-end-collision"
         },
         {
           "title": "Hit-and-Run Accidents",
-          "description": "What to do after a hit-and-run crash and how uninsured motorist coverage can protect you in California.",
-          "href": "#hit-and-run"
+          "description": "What to do after a hit-and-run crash, how California hit-and-run laws apply, and how uninsured motorist coverage protects you.",
+          "href": "https://www.lemgarcialaw.com/blog/what-you-need-to-know-about-california-hit-and-run-laws/"
         },
         {
-          "title": "Distracted Driving Crashes",
-          "description": "Holding negligent drivers accountable for accidents caused by texting, phone use, and other distractions.",
-          "href": "#distracted-driving"
+          "title": "Filipino Car Accident Lawyer",
+          "description": "Bilingual representation for the Filipino community in West Covina and the greater San Gabriel Valley after car accidents.",
+          "href": "https://www.lemgarcialaw.com/filipino-car-accident-lawyer/"
         }
       ]
     },
@@ -416,24 +420,24 @@ export const topicalEntryGrid = {
       "label": "Motorcycle Accidents",
       "links": [
         {
-          "title": "Lane-Splitting Accidents",
-          "description": "Understanding California's lane-splitting laws and how they affect motorcycle accident claims and liability.",
-          "href": "#lane-splitting"
+          "title": "Motorcycle Accident Lawyer",
+          "description": "Motorcycle cases involve insurer bias and California lane-splitting rules. Lem Garcia pushes back on assumptions about rider conduct.",
+          "href": "https://www.lemgarcialaw.com/law/lawyer/motorcycle-accident/"
         },
         {
-          "title": "Left-Turn Motorcycle Crashes",
-          "description": "Common scenarios where cars turn left in front of motorcycles and how to prove driver negligence.",
-          "href": "#left-turn-crashes"
+          "title": "Bicycle Accident Lawyer",
+          "description": "Cyclist rights under California law. Recover compensation for bicycle accident injuries on West Covina roads and bike lanes.",
+          "href": "https://www.lemgarcialaw.com/law/lawyer/bicycle-accident/"
         },
         {
-          "title": "Road Hazard Injuries",
-          "description": "Pursuing claims against government entities when poor road conditions cause motorcycle accidents in West Covina.",
-          "href": "#road-hazards"
+          "title": "Brain Injury Lawyer",
+          "description": "Catastrophic head injuries common in motorcycle and bike crashes require life-care planning for treatment, equipment, and lost earning capacity.",
+          "href": "https://www.lemgarcialaw.com/law/lawyer/brain-injury-3/"
         },
         {
-          "title": "Severe Injury Compensation",
-          "description": "Recovering full damages for catastrophic injuries common in motorcycle accidents, including brain and spinal cord injuries.",
-          "href": "#severe-injuries"
+          "title": "Spinal Cord Injury Lawyer",
+          "description": "Catastrophic spinal injuries involve lifelong care costs. Lem Garcia documents future medical needs with qualified medical experts.",
+          "href": "https://www.lemgarcialaw.com/law/lawyer/spinal-cord-injury/"
         }
       ]
     },
@@ -441,24 +445,24 @@ export const topicalEntryGrid = {
       "label": "Truck Accidents",
       "links": [
         {
-          "title": "Commercial Truck Collisions",
-          "description": "Navigating complex liability issues involving trucking companies, drivers, and multiple insurance policies.",
-          "href": "#commercial-trucks"
+          "title": "Truck Accident Lawyer",
+          "description": "Commercial truck cases involve trucking companies, drivers, and multiple insurance policies. Lem Garcia handles the complex liability issues.",
+          "href": "https://www.lemgarcialaw.com/law/lawyer/truck-accident/"
         },
         {
-          "title": "Truck Driver Negligence",
-          "description": "Holding truck drivers accountable for violations of federal safety regulations and hours-of-service rules.",
-          "href": "#driver-negligence"
+          "title": "Pedestrian Accident Lawyer",
+          "description": "Pedestrian strikes by trucks and cars often involve disputed fault and driver distraction. Investigated from scene to courtroom.",
+          "href": "https://www.lemgarcialaw.com/law/lawyer/pedestrian-accident/"
         },
         {
-          "title": "Jackknife Accident Claims",
-          "description": "Understanding the causes of jackknife truck accidents and pursuing compensation for catastrophic injuries.",
-          "href": "#jackknife-accidents"
+          "title": "Wrongful Death Lawyer",
+          "description": "Fatal truck collisions devastate families. Lem Garcia represents surviving spouses, children, and parents under California wrongful death law.",
+          "href": "https://www.lemgarcialaw.com/law/lawyer/wrongful-death/"
         },
         {
-          "title": "Truck Maintenance Failures",
-          "description": "Proving liability when poor maintenance or defective truck parts contribute to serious accidents.",
-          "href": "#maintenance-failures"
+          "title": "Personal Injury Lawyer",
+          "description": "Lem Garcia handles personal injury matters across West Covina and California, from car accidents to commercial trucking and catastrophic injuries.",
+          "href": "https://www.lemgarcialaw.com/law/lawyer/personal-injury/"
         }
       ]
     },
@@ -466,49 +470,49 @@ export const topicalEntryGrid = {
       "label": "Pedestrian & Bicycle",
       "links": [
         {
-          "title": "Crosswalk Accident Cases",
-          "description": "Protecting pedestrian rights and pursuing claims when drivers fail to yield at West Covina crosswalks.",
-          "href": "#crosswalk-accidents"
+          "title": "Pedestrian Accident Lawyer",
+          "description": "Pedestrian rights and claims when drivers fail to yield at West Covina crosswalks, parking lots, and shopping centers.",
+          "href": "https://www.lemgarcialaw.com/law/lawyer/pedestrian-accident/"
         },
         {
-          "title": "Bicycle vs. Car Collisions",
-          "description": "Understanding cyclist rights under California law and recovering compensation for bicycle accident injuries.",
-          "href": "#bicycle-collisions"
+          "title": "Bicycle Accident Lawyer",
+          "description": "Cyclist rights under California law. Recovering compensation for bicycle accident injuries, dooring claims, and crosswalk impacts.",
+          "href": "https://www.lemgarcialaw.com/law/lawyer/bicycle-accident/"
         },
         {
-          "title": "Parking Lot Pedestrian Injuries",
-          "description": "Establishing liability for pedestrian accidents in parking lots, shopping centers, and commercial properties.",
-          "href": "#parking-lot-injuries"
+          "title": "Rideshare Accident Lawyer",
+          "description": "Uber and Lyft collisions layer California Public Utilities Commission rules over standard car-accident liability. Multiple insurance policies often apply.",
+          "href": "https://www.lemgarcialaw.com/law/lawyer/ridesharing-accident/"
         },
         {
-          "title": "Dooring Accident Claims",
-          "description": "Pursuing compensation when cyclists are injured by car doors opening into bike lanes or traffic.",
-          "href": "#dooring-accidents"
+          "title": "Wrongful Death Lawyer",
+          "description": "Fatal pedestrian and bike collisions. Lem Garcia represents surviving spouses, children, and parents under California wrongful death law.",
+          "href": "https://www.lemgarcialaw.com/law/lawyer/wrongful-death/"
         }
       ]
     },
     {
-      "label": "Premises Liability",
+      "label": "Resources",
       "links": [
         {
-          "title": "Slip and Fall Accidents",
-          "description": "Proving property owner negligence in slip and fall cases at West Covina businesses and residential properties.",
-          "href": "#slip-and-fall"
+          "title": "Slip and Fall Lawyer",
+          "description": "Property owner negligence in slip and fall cases at West Covina businesses, residential properties, and commercial premises.",
+          "href": "https://www.lemgarcialaw.com/law/lawyer/slip-and-fall/"
         },
         {
-          "title": "Dog Bite Injury Claims",
-          "description": "Understanding California's strict liability dog bite laws and recovering damages for animal attack injuries.",
-          "href": "#dog-bites"
+          "title": "Dog Bite Lawyer",
+          "description": "California's strict liability dog bite laws. Lem Garcia recovers damages for animal attack injuries and scarring.",
+          "href": "https://www.lemgarcialaw.com/law/lawyer/dog-bite/"
         },
         {
-          "title": "Inadequate Security Cases",
-          "description": "Holding property owners liable when inadequate security leads to assaults or injuries on their premises.",
-          "href": "#inadequate-security"
+          "title": "Work Injury Lawyer",
+          "description": "Third-party liability claims for on-the-job injuries beyond standard workers' compensation. Maximize your recovery.",
+          "href": "https://www.lemgarcialaw.com/law/lawyer/work-injury/"
         },
         {
-          "title": "Swimming Pool Accidents",
-          "description": "Pursuing claims for drowning and near-drowning incidents caused by negligent pool maintenance or supervision.",
-          "href": "#pool-accidents"
+          "title": "Defective Products Lawyer",
+          "description": "Holding manufacturers accountable when defective vehicle parts, airbags, or consumer products cause serious injury.",
+          "href": "https://www.lemgarcialaw.com/law/lawyer/defective-products/"
         }
       ]
     }

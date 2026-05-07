@@ -61,22 +61,24 @@ const FeaturedEpisodePlayer = ({
           {description}
         </p>
 
-        {/* Audio Player */}
+        {/* Audio Player — clicking opens episode page where the AudioPlayer works */}
         <div className="flex items-center gap-3">
-          {/* Play Button */}
-          <button className="w-12 h-12 rounded-full bg-black flex items-center justify-center hover:bg-gray-800 transition-colors shrink-0">
+          <Link
+            href={episodeLink}
+            aria-label={`Play ${title}`}
+            className="w-12 h-12 rounded-full bg-black flex items-center justify-center hover:bg-gray-800 transition-colors shrink-0"
+          >
             <Play size={20} fill="white" className="text-white ml-0.5" />
-          </button>
+          </Link>
 
-          {/* Progress Bar and Time */}
-          <div className="flex-1 flex flex-col gap-1">
-            <div className="h-1.5 bg-gray-200 rounded-full overflow-hidden cursor-pointer group">
+          <Link href={episodeLink} className="flex-1 flex flex-col gap-1 cursor-pointer">
+            <div className="h-1.5 bg-gray-200 rounded-full overflow-hidden group">
               <div className="h-full w-0 bg-black transition-all group-hover:bg-gray-800" />
             </div>
             <span className="text-xs text-gray-400">
               0:00 / {duration}
             </span>
-          </div>
+          </Link>
         </div>
       </div>
 
@@ -117,27 +119,31 @@ const FeaturedEpisodePlayer = ({
             </div>
           </div>
 
-          {/* Audio Player */}
+          {/* Audio Player — clicking play opens the episode page where the real AudioPlayer lives */}
           <div className="flex items-center gap-4">
-            {/* Play Button */}
-            <button className="w-10 h-10 rounded-full bg-black flex items-center justify-center hover:bg-gray-800 transition-colors shrink-0">
+            <Link
+              href={episodeLink}
+              aria-label={`Play ${title}`}
+              className="w-10 h-10 rounded-full bg-black flex items-center justify-center hover:bg-gray-800 transition-colors shrink-0"
+            >
               <Play size={18} fill="white" className="text-white ml-0.5" />
-            </button>
+            </Link>
 
-            {/* Progress Bar */}
-            <div className="flex-1 h-1.5 bg-gray-200 rounded-full overflow-hidden cursor-pointer group">
+            <Link href={episodeLink} className="flex-1 h-1.5 bg-gray-200 rounded-full overflow-hidden cursor-pointer group">
               <div className="h-full w-0 bg-black transition-all group-hover:bg-gray-800" />
-            </div>
+            </Link>
 
-            {/* Time Display */}
             <span className="text-xs text-gray-400 shrink-0 min-w-[3.5rem] text-right">
               00/00
             </span>
 
-            {/* Volume Icon */}
-            <button className="text-gray-600 hover:text-black transition-colors shrink-0">
+            <Link
+              href={episodeLink}
+              aria-label="Open episode page for full player"
+              className="text-gray-600 hover:text-black transition-colors shrink-0"
+            >
               <Volume2 size={20} />
-            </button>
+            </Link>
           </div>
         </div>
       </div>
