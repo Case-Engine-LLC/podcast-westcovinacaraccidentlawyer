@@ -1,5 +1,5 @@
 /**
- * Site Data, Generated from Case Engine AI
+ * Site Data — Generated from Case Engine AI
  * Updated: 2026-03-10T16:38:49.475576+00:00
  */
 
@@ -14,8 +14,7 @@ export const siteConfig = {
   "formCTA": {
     "text": "Free Consultation",
     "href": "#form"
-  },
-  "firmUrl": "https://www.lemgarcialaw.com"
+  }
 };
 
 export const compliance = {
@@ -45,8 +44,7 @@ export const episode = {
   "title": "Understanding Your Rights After a Car Accident in West Covina",
   "date": "01.15.24",
   "duration": "00:45:30",
-  "description": "In this inaugural episode, Lem Garcia discusses the critical steps accident victims should take immediately following a collision in West Covina and throughout the San Gabriel Valley. Learn about California's comparative negligence laws, how insurance companies evaluate claims, and why having experienced legal representation can make the difference in your recovery. Lem shares real case examples and practical advice to help you protect your rights and maximize your compensation.",
-  "youtubeUrl": ""
+  "description": "In this inaugural episode, Lem Garcia discusses the critical steps accident victims should take immediately following a collision in West Covina and throughout the San Gabriel Valley. Learn about California's comparative negligence laws, how insurance companies evaluate claims, and why having experienced legal representation can make the difference in your recovery. Lem shares real case examples and practical advice to help you protect your rights and maximize your compensation."
 };
 
 export const attorney = {
@@ -108,17 +106,17 @@ export const faqGroups = [
         "answer": "The Lem Garcia Accident Law Podcast provides valuable insights into personal injury law, accident prevention, and legal rights for injury victims in West Covina and throughout California. Lem Garcia shares his extensive experience handling car accidents, truck collisions, motorcycle crashes, and other personal injury cases to help listeners understand their legal options and protect their rights after an accident."
       },
       {
-        "question": "How often are new episodes released?",
+        "question": "How Often are New Episodes Released?",
         "level": "h3",
         "answer": "New episodes of The Lem Garcia Accident Law Podcast are released weekly, covering timely topics in personal injury law, recent case developments, and practical advice for accident victims. Each episode is designed to be informative yet accessible, typically running 20-30 minutes to fit into your busy schedule."
       },
       {
-        "question": "Who should listen to this podcast?",
+        "question": "Who Should Listen to this Podcast?",
         "level": "h3",
         "answer": "This podcast is valuable for anyone who has been injured in an accident, family members supporting injury victims, or anyone interested in understanding their legal rights in California. Whether you've been in a car accident in West Covina or want to learn about personal injury law, Lem Garcia provides clear, actionable information that empowers listeners to make informed decisions."
       },
       {
-        "question": "Can I submit questions or topic suggestions?",
+        "question": "Can I Submit Questions or Topic Suggestions?",
         "level": "h3",
         "answer": "Yes, Lem Garcia welcomes listener questions and topic suggestions for future episodes. You can submit your questions through the Lem Garcia Law website or social media channels, and selected questions may be featured in upcoming episodes with detailed answers from Lem Garcia himself."
       }
@@ -129,17 +127,17 @@ export const faqGroups = [
     "description": "Questions about the specific legal topics and practice areas discussed on the podcast.",
     "questions": [
       {
-        "question": "What types of accident cases does the podcast cover?",
+        "question": "What Types of Accident Cases Does the Podcast Cover?",
         "level": "h2",
         "answer": "The podcast covers a comprehensive range of personal injury cases including car accidents, truck accidents, motorcycle collisions, bicycle accidents, pedestrian injuries, rideshare accidents, wrongful death claims, dog bites, and slip and fall incidents. Lem Garcia draws from real cases handled at his West Covina law firm to provide practical insights and legal guidance for each type of accident."
       },
       {
-        "question": "Does the podcast discuss California-specific laws?",
+        "question": "Does the Podcast Discuss California-Specific Laws?",
         "level": "h3",
         "answer": "Yes, The Lem Garcia Accident Law Podcast focuses extensively on California personal injury laws, including statutes of limitations, comparative negligence rules, and insurance requirements specific to West Covina and the greater Los Angeles area. Lem Garcia explains how California laws affect injury victims' rights and the claims process in terms that are easy to understand."
       },
       {
-        "question": "Will the podcast help me understand my own accident case?",
+        "question": "Will the Podcast Help Me Understand My Own Accident Case?",
         "level": "h3",
         "answer": "While the podcast provides valuable general information about personal injury law and common accident scenarios, it is not a substitute for personalized legal advice. However, listening to episodes relevant to your situation can help you understand the legal process, know what questions to ask, and make more informed decisions about your case."
       }
@@ -212,7 +210,7 @@ export const testimonials = [
 
 // Per California RPC 7.1, numeric claims in lawyer advertising require
 // substantiation. The Bible (2026-04-27) flags the $1.1M settlement reference
-// as NEEDS CONFIRMATION, firm to authorize which case results to publish on-air
+// as NEEDS CONFIRMATION — firm to authorize which case results to publish on-air
 // and how to anonymize. casesHandled / casesLabel reflect the firm's publicly
 // stated marketing position; rating / reviewCount should be re-pointed to
 // verified Google Business Profile counts before launch.
@@ -224,7 +222,7 @@ export const stats = {
   "satisfactionVerbalization": "TODO (CA RPC 7.1 substantiation): replace with verified third-party Google Business Profile rating data before launch. Numeric satisfaction claims require source citation.",
   "casesHandled": 100,
   "casesLabel": "$100M+ Recovered",
-  "casesVerbalization": "Lem Garcia has recovered millions in compensation for personal injury clients. Past results do not guarantee a similar outcome, every case depends on its specific facts and applicable California law.",
+  "casesVerbalization": "Lem Garcia has recovered millions in compensation for personal injury clients. Past results do not guarantee a similar outcome — every case depends on its specific facts and applicable California law.",
   "ratingVerbalization": "TODO (CA RPC 7.1 substantiation): re-point this rating and review count to the firm's verified Google Business Profile for West Covina before launch. Star-rating claims require citation to the verifiable source."
 };
 
@@ -255,7 +253,7 @@ export const navigation: {
     }
   ],
   "ctaText": "Subscribe",
-  "ctaHref": "#listen"
+  "ctaHref": "#subscribe"
 };
 
 export const footer = {
@@ -313,7 +311,7 @@ export const subscribeCTA = {
   "description": "Subscribe to The Lem Garcia Accident Law Podcast and receive weekly insights into personal injury law, accident prevention, and legal rights for injury victims in California. Each episode provides valuable information that can help you understand the claims process, avoid common mistakes, and protect your rights after an accident. Join thousands of listeners who trust Lem Garcia for clear, practical legal guidance.",
   "highlights": [
     "Weekly episodes covering car accidents, truck collisions, motorcycle crashes, and other personal injury topics",
-    "Expert insights from an attorney who has recovered over $100 million for injury victims",
+    "Insights from an attorney who has recovered over $100 million for injury victims",
     "Clear explanations of California personal injury laws and insurance practices",
     "Real-world case examples and practical advice for accident victims",
     "Access to exclusive content and early episode releases for subscribers"
@@ -345,8 +343,7 @@ export const episodes = [
       "Common Mistakes That Harm Your Claim",
       "When to Contact a Personal Injury Attorney"
     ],
-    "logo": "/images/logo.svg",
-    "youtubeUrl": ""
+    "logo": "/images/logo.svg"
   },
   {
     "id": 2,
@@ -372,8 +369,7 @@ export const episodes = [
       "Documenting Severe Injuries",
       "Maximizing Your Motorcycle Accident Settlement"
     ],
-    "logo": "/images/logo.svg",
-    "youtubeUrl": ""
+    "logo": "/images/logo.svg"
   }
 ];
 
@@ -395,24 +391,24 @@ export const topicalEntryGrid = {
       "label": "Car Accidents",
       "links": [
         {
-          "title": "Car Accident Lawyer",
-          "description": "Lem Garcia represents drivers and passengers injured in West Covina collisions, San Gabriel Valley freeway crashes, and rear-end accidents across California.",
-          "href": "https://www.lemgarcialaw.com/law/lawyer/car-accident/"
+          "title": "Rear-End Collision Claims",
+          "description": "Learn about liability, common injuries, and compensation in rear-end car accidents on West Covina roads and California highways.",
+          "href": "#rear-end-collisions"
         },
         {
-          "title": "Rear-End Collision Claims",
-          "description": "Learn about liability, common injuries, and compensation in rear-end car accidents and whether you can sue when fault appears clear.",
-          "href": "https://www.lemgarcialaw.com/law/lawyer/car-accident/can-you-sue-for-a-rear-end-collision"
+          "title": "Intersection Accident Cases",
+          "description": "Understanding fault determination and legal options when car accidents occur at West Covina intersections and traffic signals.",
+          "href": "#intersection-accidents"
         },
         {
           "title": "Hit-and-Run Accidents",
-          "description": "What to do after a hit-and-run crash, how California hit-and-run laws apply, and how uninsured motorist coverage protects you.",
-          "href": "https://www.lemgarcialaw.com/blog/what-you-need-to-know-about-california-hit-and-run-laws/"
+          "description": "What to do after a hit-and-run crash and how uninsured motorist coverage can protect you in California.",
+          "href": "#hit-and-run"
         },
         {
-          "title": "Filipino Car Accident Lawyer",
-          "description": "Bilingual representation for the Filipino community in West Covina and the greater San Gabriel Valley after car accidents.",
-          "href": "https://www.lemgarcialaw.com/filipino-car-accident-lawyer/"
+          "title": "Distracted Driving Crashes",
+          "description": "Holding negligent drivers accountable for accidents caused by texting, phone use, and other distractions.",
+          "href": "#distracted-driving"
         }
       ]
     },
@@ -420,24 +416,24 @@ export const topicalEntryGrid = {
       "label": "Motorcycle Accidents",
       "links": [
         {
-          "title": "Motorcycle Accident Lawyer",
-          "description": "Motorcycle cases involve insurer bias and California lane-splitting rules. Lem Garcia pushes back on assumptions about rider conduct.",
-          "href": "https://www.lemgarcialaw.com/law/lawyer/motorcycle-accident/"
+          "title": "Lane-Splitting Accidents",
+          "description": "Understanding California's lane-splitting laws and how they affect motorcycle accident claims and liability.",
+          "href": "#lane-splitting"
         },
         {
-          "title": "Bicycle Accident Lawyer",
-          "description": "Cyclist rights under California law. Recover compensation for bicycle accident injuries on West Covina roads and bike lanes.",
-          "href": "https://www.lemgarcialaw.com/law/lawyer/bicycle-accident/"
+          "title": "Left-Turn Motorcycle Crashes",
+          "description": "Common scenarios where cars turn left in front of motorcycles and how to prove driver negligence.",
+          "href": "#left-turn-crashes"
         },
         {
-          "title": "Brain Injury Lawyer",
-          "description": "Catastrophic head injuries common in motorcycle and bike crashes require life-care planning for treatment, equipment, and lost earning capacity.",
-          "href": "https://www.lemgarcialaw.com/law/lawyer/brain-injury-3/"
+          "title": "Road Hazard Injuries",
+          "description": "Pursuing claims against government entities when poor road conditions cause motorcycle accidents in West Covina.",
+          "href": "#road-hazards"
         },
         {
-          "title": "Spinal Cord Injury Lawyer",
-          "description": "Catastrophic spinal injuries involve lifelong care costs. Lem Garcia documents future medical needs with qualified medical experts.",
-          "href": "https://www.lemgarcialaw.com/law/lawyer/spinal-cord-injury/"
+          "title": "Severe Injury Compensation",
+          "description": "Recovering full damages for catastrophic injuries common in motorcycle accidents, including brain and spinal cord injuries.",
+          "href": "#severe-injuries"
         }
       ]
     },
@@ -445,24 +441,24 @@ export const topicalEntryGrid = {
       "label": "Truck Accidents",
       "links": [
         {
-          "title": "Truck Accident Lawyer",
-          "description": "Commercial truck cases involve trucking companies, drivers, and multiple insurance policies. Lem Garcia handles the complex liability issues.",
-          "href": "https://www.lemgarcialaw.com/law/lawyer/truck-accident/"
+          "title": "Commercial Truck Collisions",
+          "description": "Navigating complex liability issues involving trucking companies, drivers, and multiple insurance policies.",
+          "href": "#commercial-trucks"
         },
         {
-          "title": "Pedestrian Accident Lawyer",
-          "description": "Pedestrian strikes by trucks and cars often involve disputed fault and driver distraction. Investigated from scene to courtroom.",
-          "href": "https://www.lemgarcialaw.com/law/lawyer/pedestrian-accident/"
+          "title": "Truck Driver Negligence",
+          "description": "Holding truck drivers accountable for violations of federal safety regulations and hours-of-service rules.",
+          "href": "#driver-negligence"
         },
         {
-          "title": "Wrongful Death Lawyer",
-          "description": "Fatal truck collisions devastate families. Lem Garcia represents surviving spouses, children, and parents under California wrongful death law.",
-          "href": "https://www.lemgarcialaw.com/law/lawyer/wrongful-death/"
+          "title": "Jackknife Accident Claims",
+          "description": "Understanding the causes of jackknife truck accidents and pursuing compensation for catastrophic injuries.",
+          "href": "#jackknife-accidents"
         },
         {
-          "title": "Personal Injury Lawyer",
-          "description": "Lem Garcia handles personal injury matters across West Covina and California, from car accidents to commercial trucking and catastrophic injuries.",
-          "href": "https://www.lemgarcialaw.com/law/lawyer/personal-injury/"
+          "title": "Truck Maintenance Failures",
+          "description": "Proving liability when poor maintenance or defective truck parts contribute to serious accidents.",
+          "href": "#maintenance-failures"
         }
       ]
     },
@@ -470,49 +466,49 @@ export const topicalEntryGrid = {
       "label": "Pedestrian & Bicycle",
       "links": [
         {
-          "title": "Pedestrian Accident Lawyer",
-          "description": "Pedestrian rights and claims when drivers fail to yield at West Covina crosswalks, parking lots, and shopping centers.",
-          "href": "https://www.lemgarcialaw.com/law/lawyer/pedestrian-accident/"
+          "title": "Crosswalk Accident Cases",
+          "description": "Protecting pedestrian rights and pursuing claims when drivers fail to yield at West Covina crosswalks.",
+          "href": "#crosswalk-accidents"
         },
         {
-          "title": "Bicycle Accident Lawyer",
-          "description": "Cyclist rights under California law. Recovering compensation for bicycle accident injuries, dooring claims, and crosswalk impacts.",
-          "href": "https://www.lemgarcialaw.com/law/lawyer/bicycle-accident/"
+          "title": "Bicycle vs. Car Collisions",
+          "description": "Understanding cyclist rights under California law and recovering compensation for bicycle accident injuries.",
+          "href": "#bicycle-collisions"
         },
         {
-          "title": "Rideshare Accident Lawyer",
-          "description": "Uber and Lyft collisions layer California Public Utilities Commission rules over standard car-accident liability. Multiple insurance policies often apply.",
-          "href": "https://www.lemgarcialaw.com/law/lawyer/ridesharing-accident/"
+          "title": "Parking Lot Pedestrian Injuries",
+          "description": "Establishing liability for pedestrian accidents in parking lots, shopping centers, and commercial properties.",
+          "href": "#parking-lot-injuries"
         },
         {
-          "title": "Wrongful Death Lawyer",
-          "description": "Fatal pedestrian and bike collisions. Lem Garcia represents surviving spouses, children, and parents under California wrongful death law.",
-          "href": "https://www.lemgarcialaw.com/law/lawyer/wrongful-death/"
+          "title": "Dooring Accident Claims",
+          "description": "Pursuing compensation when cyclists are injured by car doors opening into bike lanes or traffic.",
+          "href": "#dooring-accidents"
         }
       ]
     },
     {
-      "label": "Resources",
+      "label": "Premises Liability",
       "links": [
         {
-          "title": "Slip and Fall Lawyer",
-          "description": "Property owner negligence in slip and fall cases at West Covina businesses, residential properties, and commercial premises.",
-          "href": "https://www.lemgarcialaw.com/law/lawyer/slip-and-fall/"
+          "title": "Slip and Fall Accidents",
+          "description": "Proving property owner negligence in slip and fall cases at West Covina businesses and residential properties.",
+          "href": "#slip-and-fall"
         },
         {
-          "title": "Dog Bite Lawyer",
-          "description": "California's strict liability dog bite laws. Lem Garcia recovers damages for animal attack injuries and scarring.",
-          "href": "https://www.lemgarcialaw.com/law/lawyer/dog-bite/"
+          "title": "Dog Bite Injury Claims",
+          "description": "Understanding California's strict liability dog bite laws and recovering damages for animal attack injuries.",
+          "href": "#dog-bites"
         },
         {
-          "title": "Work Injury Lawyer",
-          "description": "Third-party liability claims for on-the-job injuries beyond standard workers' compensation. Maximize your recovery.",
-          "href": "https://www.lemgarcialaw.com/law/lawyer/work-injury/"
+          "title": "Inadequate Security Cases",
+          "description": "Holding property owners liable when inadequate security leads to assaults or injuries on their premises.",
+          "href": "#inadequate-security"
         },
         {
-          "title": "Defective Products Lawyer",
-          "description": "Holding manufacturers accountable when defective vehicle parts, airbags, or consumer products cause serious injury.",
-          "href": "https://www.lemgarcialaw.com/law/lawyer/defective-products/"
+          "title": "Swimming Pool Accidents",
+          "description": "Pursuing claims for drowning and near-drowning incidents caused by negligent pool maintenance or supervision.",
+          "href": "#pool-accidents"
         }
       ]
     }
@@ -653,7 +649,7 @@ export const authorProfiles: Record<string, {
       "Work injuries (third-party liability)"
     ],
     bio: [
-      "Lem Garcia is a dedicated personal injury attorney serving West Covina and the greater San Gabriel Valley with a commitment to fighting for accident victims' rights. With extensive experience handling complex car accident, truck collision, and wrongful death cases, Lem Garcia has built a reputation for aggressive advocacy and compassionate client service. Lem Garcia understands that accidents can devastate families financially, physically, and emotionally, which is why Lem Garcia Law approaches each case with personalized attention and a determination to secure maximum compensation.",
+      "Lem Garcia is a dedicated personal injury attorney serving West Covina and the greater San Gabriel Valley with a commitment to fighting for accident victims' rights. With extensive experience handling complex car accident, truck collision, and wrongful death cases, Lem Garcia has built a reputation for aggressive advocacy and compassionate client service. Lem Garcia understands that accidents can devastate families financially, physically, and emotionally, which is why Lem Garcia Law approaches each case with personalized attention and a determination to secure fair compensation.",
       "Throughout his legal career, Lem Garcia has successfully represented hundreds of clients injured in motor vehicle accidents, pedestrian collisions, bicycle accidents, and premises liability cases. Lem Garcia's deep knowledge of California personal injury law, combined with his understanding of the local West Covina court system and insurance company tactics, allows him to build compelling cases that deliver results. Lem Garcia takes pride in being accessible to clients, explaining complex legal processes in clear terms, and keeping families informed every step of the way.",
       "Beyond his legal practice, Lem Garcia is passionate about educating the West Covina community on accident prevention and legal rights through The Lem Garcia Accident Law Podcast. This platform allows Lem Garcia to share valuable insights, answer common questions, and empower listeners with knowledge that can protect them before and after an accident occurs. When not advocating for clients or recording podcast episodes, Lem Garcia is actively involved in the West Covina community and committed to making local roads safer for everyone."
 ],
