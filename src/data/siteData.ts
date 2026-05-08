@@ -14,7 +14,9 @@ export const siteConfig = {
   "formCTA": {
     "text": "Free Consultation",
     "href": "#form"
-  }
+  },
+  "firmUrl": "https://www.lemgarcialaw.com",
+  "rssFeedUrl": ""
 };
 
 export const compliance = {
