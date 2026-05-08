@@ -249,7 +249,7 @@ export const navigation: {
       "href": "#contact"
     },
     {
-      "name": "Lem's Bio",
+      "name": "Meet Lem Garcia",
       "href": "https://lemgarcia.attorney",
       "external": true
     }
@@ -345,7 +345,8 @@ export const episodes = [
       "Common Mistakes That Harm Your Claim",
       "When to Contact a Personal Injury Attorney"
     ],
-    "logo": "/images/logo.svg"
+    "logo": "/images/logo.svg",
+    "youtubeUrl": ""
   },
   {
     "id": 2,
@@ -371,7 +372,8 @@ export const episodes = [
       "Documenting Severe Injuries",
       "Maximizing Your Motorcycle Accident Settlement"
     ],
-    "logo": "/images/logo.svg"
+    "logo": "/images/logo.svg",
+    "youtubeUrl": ""
   }
 ];
 
