@@ -32,6 +32,7 @@ const OtherEpisodes = ({ currentEpisodeId, episodes: propEpisodes }: OtherEpisod
       concepts: [],
       chapters: [],
       logo: '',
+      youtubeUrl: '',
     })
   }
 

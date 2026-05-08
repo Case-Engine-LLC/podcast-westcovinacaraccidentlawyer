@@ -44,6 +44,7 @@ const LatestEpisodes = ({ episodes: propEpisodes }: LatestEpisodesProps) => {
       concepts: [],
       chapters: [],
       logo: '',
+      youtubeUrl: '',
     })
   }
 
