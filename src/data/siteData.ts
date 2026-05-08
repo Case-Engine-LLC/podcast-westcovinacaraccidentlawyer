@@ -1,7 +1,9 @@
 /**
  * Site Data — Generated from Case Engine AI
  * Updated: 2026-03-10T16:38:49.475576+00:00
- */export const siteConfig = {
+ */
+
+export const siteConfig = {
   "podcastName": "The Lem Garcia Accident Law Podcast",
   "tagline": "NEW EPISODE",
   "podcastUrl": "https://podcast-westcovinacaraccidentlawyer.vercel.app",
@@ -217,11 +219,11 @@ export const stats = {
   "reviewCount": 200,
   "satisfactionRate": 99,
   "satisfactionLabel": "Client Satisfaction Rate",
-  "satisfactionVerbalization": "",
+  "satisfactionVerbalization": "TODO (CA RPC 7.1 substantiation): replace with verified third-party Google Business Profile rating data before launch. Numeric satisfaction claims require source citation.",
   "casesHandled": 100,
   "casesLabel": "$100M+ Recovered",
   "casesVerbalization": "Lem Garcia has recovered millions in compensation for personal injury clients. Past results do not guarantee a similar outcome — every case depends on its specific facts and applicable California law.",
-  "ratingVerbalization": "'s verified Google Business Profile for West Covina before launch. Star-rating claims require citation to the verifiable source"
+  "ratingVerbalization": "TODO (CA RPC 7.1 substantiation): re-point this rating and review count to the firm's verified Google Business Profile for West Covina before launch. Star-rating claims require citation to the verifiable source."
 };
 
 export const navigation: {
