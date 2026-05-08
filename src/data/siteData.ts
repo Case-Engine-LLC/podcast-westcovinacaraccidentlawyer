@@ -393,22 +393,26 @@ export const topicalEntryGrid = {
         {
           "title": "Rear-End Collision Claims",
           "description": "Learn about liability, common injuries, and compensation in rear-end car accidents on West Covina roads and California highways.",
-          "href": "#rear-end-collisions"
+          "href": "#rear-end-collisions",
+          "image": "/topical/icon-pa-car.svg"
         },
         {
           "title": "Intersection Accident Cases",
           "description": "Understanding fault determination and legal options when car accidents occur at West Covina intersections and traffic signals.",
-          "href": "#intersection-accidents"
+          "href": "#intersection-accidents",
+          "image": "/topical/icon-svc-liability.svg"
         },
         {
           "title": "Hit-and-Run Accidents",
           "description": "What to do after a hit-and-run crash and how uninsured motorist coverage can protect you in California.",
-          "href": "#hit-and-run"
+          "href": "#hit-and-run",
+          "image": "/topical/icon-svc-investigate.svg"
         },
         {
           "title": "Distracted Driving Crashes",
           "description": "Holding negligent drivers accountable for accidents caused by texting, phone use, and other distractions.",
-          "href": "#distracted-driving"
+          "href": "#distracted-driving",
+          "image": "/topical/icon-svc-defense.svg"
         }
       ]
     },
@@ -418,22 +422,26 @@ export const topicalEntryGrid = {
         {
           "title": "Lane-Splitting Accidents",
           "description": "Understanding California's lane-splitting laws and how they affect motorcycle accident claims and liability.",
-          "href": "#lane-splitting"
+          "href": "#lane-splitting",
+          "image": "/topical/icon-pa-moto.svg"
         },
         {
           "title": "Left-Turn Motorcycle Crashes",
           "description": "Common scenarios where cars turn left in front of motorcycles and how to prove driver negligence.",
-          "href": "#left-turn-crashes"
+          "href": "#left-turn-crashes",
+          "image": "/topical/icon-svc-liability.svg"
         },
         {
           "title": "Road Hazard Injuries",
           "description": "Pursuing claims against government entities when poor road conditions cause motorcycle accidents in West Covina.",
-          "href": "#road-hazards"
+          "href": "#road-hazards",
+          "image": "/topical/icon-svc-comply.svg"
         },
         {
           "title": "Severe Injury Compensation",
           "description": "Recovering full damages for catastrophic injuries common in motorcycle accidents, including brain and spinal cord injuries.",
-          "href": "#severe-injuries"
+          "href": "#severe-injuries",
+          "image": "/topical/icon-pa-medical.svg"
         }
       ]
     },
@@ -443,22 +451,26 @@ export const topicalEntryGrid = {
         {
           "title": "Commercial Truck Collisions",
           "description": "Navigating complex liability issues involving trucking companies, drivers, and multiple insurance policies.",
-          "href": "#commercial-trucks"
+          "href": "#commercial-trucks",
+          "image": "/topical/icon-pa-truck.svg"
         },
         {
           "title": "Truck Driver Negligence",
           "description": "Holding truck drivers accountable for violations of federal safety regulations and hours-of-service rules.",
-          "href": "#driver-negligence"
+          "href": "#driver-negligence",
+          "image": "/topical/icon-svc-liability.svg"
         },
         {
           "title": "Jackknife Accident Claims",
           "description": "Understanding the causes of jackknife truck accidents and pursuing compensation for catastrophic injuries.",
-          "href": "#jackknife-accidents"
+          "href": "#jackknife-accidents",
+          "image": "/topical/icon-svc-investigate.svg"
         },
         {
           "title": "Truck Maintenance Failures",
           "description": "Proving liability when poor maintenance or defective truck parts contribute to serious accidents.",
-          "href": "#maintenance-failures"
+          "href": "#maintenance-failures",
+          "image": "/topical/icon-svc-comply.svg"
         }
       ]
     },
@@ -468,22 +480,26 @@ export const topicalEntryGrid = {
         {
           "title": "Crosswalk Accident Cases",
           "description": "Protecting pedestrian rights and pursuing claims when drivers fail to yield at West Covina crosswalks.",
-          "href": "#crosswalk-accidents"
+          "href": "#crosswalk-accidents",
+          "image": "/topical/icon-pa-pedestrian.svg"
         },
         {
           "title": "Bicycle vs. Car Collisions",
           "description": "Understanding cyclist rights under California law and recovering compensation for bicycle accident injuries.",
-          "href": "#bicycle-collisions"
+          "href": "#bicycle-collisions",
+          "image": "/topical/icon-pa-bike.svg"
         },
         {
           "title": "Parking Lot Pedestrian Injuries",
           "description": "Establishing liability for pedestrian accidents in parking lots, shopping centers, and commercial properties.",
-          "href": "#parking-lot-injuries"
+          "href": "#parking-lot-injuries",
+          "image": "/topical/icon-svc-investigate.svg"
         },
         {
           "title": "Dooring Accident Claims",
           "description": "Pursuing compensation when cyclists are injured by car doors opening into bike lanes or traffic.",
-          "href": "#dooring-accidents"
+          "href": "#dooring-accidents",
+          "image": "/topical/icon-svc-liability.svg"
         }
       ]
     },
@@ -493,22 +509,26 @@ export const topicalEntryGrid = {
         {
           "title": "Slip and Fall Accidents",
           "description": "Proving property owner negligence in slip and fall cases at West Covina businesses and residential properties.",
-          "href": "#slip-and-fall"
+          "href": "#slip-and-fall",
+          "image": "/topical/icon-pa-medical.svg"
         },
         {
           "title": "Dog Bite Injury Claims",
           "description": "Understanding California's strict liability dog bite laws and recovering damages for animal attack injuries.",
-          "href": "#dog-bites"
+          "href": "#dog-bites",
+          "image": "/topical/icon-pa-wrongful-death.svg"
         },
         {
           "title": "Inadequate Security Cases",
           "description": "Holding property owners liable when inadequate security leads to assaults or injuries on their premises.",
-          "href": "#inadequate-security"
+          "href": "#inadequate-security",
+          "image": "/topical/icon-svc-defense.svg"
         },
         {
           "title": "Swimming Pool Accidents",
           "description": "Pursuing claims for drowning and near-drowning incidents caused by negligent pool maintenance or supervision.",
-          "href": "#pool-accidents"
+          "href": "#pool-accidents",
+          "image": "/topical/icon-phase-consult.svg"
         }
       ]
     }
