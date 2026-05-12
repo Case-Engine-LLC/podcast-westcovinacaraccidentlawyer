@@ -13,7 +13,7 @@ export const siteConfig = {
   },
   "formCTA": {
     "text": "Free Consultation",
-    "href": "#form"
+    "href": "https://www.lemgarcialaw.com/contact/"
   },
   "firmUrl": "https://www.lemgarcialaw.com",
   "rssFeedUrl": ""
@@ -246,7 +246,8 @@ export const navigation: {
     },
     {
       "name": "Contact",
-      "href": "#contact"
+      "href": "https://www.lemgarcialaw.com/contact/",
+      "external": true
     },
     {
       "name": "Meet Lem Garcia",
