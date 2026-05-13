@@ -7,7 +7,7 @@ import { subscribeCTA } from '@/lib/site-compat'
 
 const PodcastSubscribeCTA = () => {
   return (
-    <section className="bg-white py-4 md:py-2">
+    <section id="subscribe" className="bg-white py-4 md:py-2">
       <div className="max-w-container mx-auto px-6 md:px-12">
         {/* Background Container with Image */}
         <div className="relative rounded-3xl overflow-hidden">

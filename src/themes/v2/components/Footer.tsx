@@ -53,11 +53,7 @@ const Footer = () => {
         {/* Legal */}
         <div>
           <h3 className="font-heading text-lg font-bold mb-6 text-[#FF9E00]">Legal</h3>
-          <ul className="space-y-3 text-sm text-gray-400">
-            <li><a href="#" className="hover:text-white transition-colors">Privacy Policy</a></li>
-            <li><a href="#" className="hover:text-white transition-colors">Terms of Service</a></li>
-            <li><a href="#" className="hover:text-white transition-colors">Cookie Policy</a></li>
-          </ul>
+          
         </div>
       </div>
 

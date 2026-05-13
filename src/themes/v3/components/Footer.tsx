@@ -58,28 +58,17 @@ const Footer = () => {
             <h4 className="text-white font-bold mb-6">Resources</h4>
             <ul className="space-y-4 text-sm text-slate-400">
               <li><a href="#car-accident-attorney" className="hover:text-amber-500 transition-colors">Car Accident Guide</a></li>
-              <li><a href="#" className="hover:text-amber-500 transition-colors">Legal Terms Glossary</a></li>
-              <li><a href="#" className="hover:text-amber-500 transition-colors">Client Reviews</a></li>
               <li><a href={`tel:${contact.phone}`} className="hover:text-amber-500 transition-colors">Contact Attorneys</a></li>
             </ul>
           </div>
 
           {/* Who Should Listen */}
-          <div>
-            <h4 className="text-white font-bold mb-6">Who Should Listen</h4>
-            <ul className="space-y-4 text-sm text-slate-400">
-              <li><a href="#" className="hover:text-amber-500 transition-colors">Accident Victims</a></li>
-              <li><a href="#" className="hover:text-amber-500 transition-colors">Law Students</a></li>
-              <li><a href="#" className="hover:text-amber-500 transition-colors">Legal Professionals</a></li>
-            </ul>
-          </div>
+          
         </div>
 
         <div className="border-t border-white/10 pt-8 flex flex-col md:flex-row justify-between items-center gap-4 text-xs text-slate-600">
           <p>&copy; {new Date().getFullYear()} {footer.copyright}. All rights reserved.</p>
           <div className="flex gap-6">
-            <a href="#" className="hover:text-slate-400 transition-colors">Privacy Policy</a>
-            <a href="#" className="hover:text-slate-400 transition-colors">Terms of Service</a>
           </div>
         </div>
       </div>

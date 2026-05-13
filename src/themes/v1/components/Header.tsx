@@ -34,22 +34,10 @@ const Header = ({ variant = 'dark' }: HeaderProps) => {
   return (
     <header className={`fixed top-0 left-0 right-0 z-50 transition-colors duration-300 ${headerBg}`}>
       <div className="max-w-container mx-auto px-6 md:px-12 py-4 flex items-center justify-between">
-        {/* Logo — links to law firm homepage */}
-        {(siteConfig as { firmUrl?: string }).firmUrl ? (
-          <a
-            href={(siteConfig as { firmUrl?: string }).firmUrl}
-            target="_blank"
-            rel="noopener noreferrer"
-            className="flex items-center"
-            aria-label={`${siteConfig.podcastName}, visit law firm site`}
-          >
-            <img src="/logo.svg" alt={siteConfig.podcastName} className="h-12 md:h-14 w-auto object-contain" />
-          </a>
-        ) : (
-          <Link href="/" className="flex items-center">
-            <img src="/logo.svg" alt={siteConfig.podcastName} className="h-12 md:h-14 w-auto object-contain" />
-          </Link>
-        )}
+        {/* Logo links to the podcast site home */}
+        <Link href="/" className="flex items-center" aria-label={siteConfig.podcastName}>
+          <img src="/logo.svg" alt={siteConfig.podcastName} className="h-12 md:h-14 w-auto object-contain" />
+        </Link>
 
         {/* Desktop Nav */}
         <nav className="hidden md:flex items-center gap-10 absolute left-1/2 -translate-x-1/2">
