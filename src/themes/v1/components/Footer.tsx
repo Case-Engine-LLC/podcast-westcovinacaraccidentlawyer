@@ -3,7 +3,7 @@
 import React from 'react'
 import Link from 'next/link'
 import { Facebook, Instagram, Linkedin, Youtube } from 'lucide-react'
-import { footer, chapters } from '@/data/siteData'
+import { footer, episodes as episodesData } from '@/data/siteData'
 
 const XIcon = ({ size = 20, className = '' }: { size?: number; className?: string }) => (
   <svg
@@ -22,9 +22,9 @@ const XIcon = ({ size = 20, className = '' }: { size?: number; className?: strin
 const Footer = () => {
   const currentYear = new Date().getFullYear()
 
-  const episodes = chapters.map((ch, idx) => ({
-    name: `Episode ${ch.number}: ${ch.title.split(':')[0]}`,
-    href: `#chapter-${ch.number}`,
+  const epList = (episodesData as Array<{ id: number | string; number?: number; title: string }>).map(ep => ({
+    name: `Episode ${ep.number ?? ep.id}: ${(ep.title || '').split(':')[0]}`,
+    href: `/episode/${ep.id}`,
   }))
 
   return (
@@ -75,7 +75,7 @@ const Footer = () => {
           <div>
             <h3 className="text-xl font-bold text-white mb-6">Episodes</h3>
             <div className="grid grid-cols-3 gap-x-8 gap-y-4">
-              {episodes.map((episode, index) => (
+              {epList.map((episode, index) => (
                 <Link
                   key={index}
                   href={episode.href}
