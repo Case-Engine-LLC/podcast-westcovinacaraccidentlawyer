@@ -264,17 +264,13 @@ export const footer = {
   "description": "The Lem Garcia Accident Law Podcast delivers essential legal insights and practical advice for accident victims throughout West Covina and the San Gabriel Valley. Subscribe to stay informed about your rights, learn from real case experiences, and get answers to your most pressing personal injury questions from an experienced attorney who fights for justice.",
   "copyright": "Lem Garcia Law",
   "socialLinks": {
-    "twitter": "#",
-    "linkedin": "#",
     "facebook": "#",
-    "instagram": "#",
-    "youtube": "#"
-  },
-  socialLinks: {
-      "instagram": "https://www.instagram.com/lemgarcialaw/",
-      "linkedin": "https://www.linkedin.com/in/westcovinacaraccidentattorney/",
-      "twitter": "https://twitter.com/wcovinainjury"
-  },
+    "instagram": "https://www.instagram.com/lemgarcialaw/",
+    "linkedin": "https://www.linkedin.com/in/westcovinacaraccidentattorney/",
+    "twitter": "https://twitter.com/wcovinainjury",
+    "youtube": "#",
+    "tiktok": ""
+  }
 };
 
 export const awards = [
