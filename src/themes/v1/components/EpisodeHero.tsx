@@ -44,7 +44,7 @@ const EpisodeHero = ({ episode: propEpisode }: EpisodeHeroProps) => {
 
               {/* Description */}
               <p className="text-base md:text-lg text-gray-700 leading-relaxed mb-8">
-                {ep.description.replace(/\*\*/g, '')}
+                {(() => { const raw = ep.description.replace(/\*\*/g, ''); const first = raw.split(/\n\n+/)[0]; if (first.length <= 280) return first; const cut = first.slice(0, 280); const lastDot = cut.lastIndexOf('. '); return (lastDot > 120 ? cut.slice(0, lastDot + 1) : cut.replace(/[,;:\-]+\s*[^,;:\-]*$/, '')) + '…'; })()}
               </p>
 
               {/* Platform Buttons */}
