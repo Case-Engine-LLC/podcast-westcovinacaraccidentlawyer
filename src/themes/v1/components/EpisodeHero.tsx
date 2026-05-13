@@ -1,6 +1,6 @@
 'use client'
 
-import React from 'react'
+import React, { useState } from 'react'
 import Link from 'next/link'
 import { episode as staticEpisode, siteConfig, episodes as staticEpisodesData } from '@/data/siteData'
 import type { Episode } from '@/lib/data'
@@ -11,6 +11,7 @@ interface EpisodeHeroProps {
 
 const EpisodeHero = ({ episode: propEpisode }: EpisodeHeroProps) => {
   const ep = propEpisode ?? staticEpisode
+  const [descExpanded, setDescExpanded] = useState(false)
   const episodesData = propEpisode ? [propEpisode] : staticEpisodesData
   return (
     <>
@@ -43,9 +44,31 @@ const EpisodeHero = ({ episode: propEpisode }: EpisodeHeroProps) => {
               </h1>
 
               {/* Description */}
-              <p className="text-base md:text-lg text-gray-700 leading-relaxed mb-8">
-                {(() => { const raw = ep.description.replace(/\*\*/g, ''); const first = raw.split(/\n\n+/)[0]; if (first.length <= 280) return first; const cut = first.slice(0, 280); const lastDot = cut.lastIndexOf('. '); return (lastDot > 120 ? cut.slice(0, lastDot + 1) : cut.replace(/[,;:\-]+\s*[^,;:\-]*$/, '')) + '…'; })()}
-              </p>
+              {(() => {
+                const full = ep.description.replace(/\*\*/g, '')
+                const isLong = full.length > 280
+                return (
+                  <>
+                    <p
+                      className={`text-base md:text-lg text-gray-700 leading-relaxed mb-3 ${
+                        isLong && !descExpanded ? 'line-clamp-4' : ''
+                      }`}
+                    >
+                      {full}
+                    </p>
+                    {isLong && (
+                      <button
+                        type="button"
+                        onClick={() => setDescExpanded((v) => !v)}
+                        className="inline-flex items-center gap-1 text-sm font-semibold text-secondary hover:text-secondary/80 mb-8 cursor-pointer"
+                      >
+                        {descExpanded ? 'Show less' : 'Read more'}
+                        <span aria-hidden="true">{descExpanded ? '▲' : '▼'}</span>
+                      </button>
+                    )}
+                  </>
+                )
+              })()}
 
               {/* Platform Buttons */}
               <div className="flex flex-col sm:flex-row gap-4">
