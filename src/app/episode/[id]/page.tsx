@@ -1,12 +1,12 @@
 import V1EpisodePage from '@/themes/v1/pages/V1EpisodePage'
-import { getAllEpisodes, getEpisodeById, getEpisodeTranscript } from '@/lib/data'
+import { getAllEpisodes, getEpisodeByIdOrSlug, getEpisodeTranscript } from '@/lib/data'
 
 export const revalidate = 3600
 
 export async function generateStaticParams() {
   try {
     const episodes = await getAllEpisodes()
-    return episodes.map(ep => ({ id: String(ep.id) }))
+    return episodes.map(ep => ({ id: ep.slug }))
   } catch {
     return []
   }
@@ -15,7 +15,7 @@ export async function generateStaticParams() {
 export default async function Page({ params }: { params: Promise<{ id: string }> }) {
   const { id } = await params
   const allEpisodes = await getAllEpisodes()
-  const episode = await getEpisodeById(Number(id))
+  const episode = await getEpisodeByIdOrSlug(id)
   const transcript = episode ? await getEpisodeTranscript(episode) : []
 
   return (

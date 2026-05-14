@@ -325,6 +325,7 @@ export const subscribeCTA = {
 export const episodes = [
   {
     "id": 1,
+    "slug": "understanding-your-rights-after-a-car-accident-in-west-covina",
     "number": 1,
     "title": "Understanding Your Rights After a Car Accident in West Covina",
     "subtitle": "Episode 1 \u2022 Lem Garcia Law",
@@ -352,6 +353,7 @@ export const episodes = [
   },
   {
     "id": 2,
+    "slug": "motorcycle-accident-claims-what-riders-need-to-know",
     "number": 2,
     "title": "Motorcycle Accident Claims: What Riders Need to Know",
     "subtitle": "Episode 2 \u2022 Lem Garcia Law",
