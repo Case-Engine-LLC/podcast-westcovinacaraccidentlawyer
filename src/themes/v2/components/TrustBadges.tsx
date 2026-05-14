@@ -11,7 +11,7 @@ const TrustBadges = () => {
   const badges = trustBadges
 
   return (
-    <div className="overflow-hidden py-6">
+    <div className="relative z-20 overflow-x-hidden py-6">
       <div className="flex animate-marquee-fast md:animate-marquee-slower">
         {/* First set */}
         {badges.map((badge) => (
@@ -42,7 +42,7 @@ const TrustBadges = () => {
               <Info size={20} className="text-gray-400 hover:text-[#10284B] transition-colors" />
 
               {hoveredBadge === badge.id && (
-                <div className="absolute bottom-full left-1/2 -translate-x-1/2 mb-2 w-48 bg-[#10284B] text-white text-xs rounded-lg p-3 shadow-lg z-10">
+                <div className="absolute bottom-full left-1/2 -translate-x-1/2 mb-2 w-48 bg-[#10284B] text-white text-xs rounded-lg p-3 shadow-lg z-50">
                   {badge.tooltip}
                   <div className="absolute top-full left-1/2 -translate-x-1/2 -mt-1 w-2 h-2 bg-[#10284B] rotate-45" />
                 </div>
@@ -80,7 +80,7 @@ const TrustBadges = () => {
               <Info size={20} className="text-gray-400 hover:text-[#10284B] transition-colors" />
 
               {hoveredBadge === badge.id + 100 && (
-                <div className="absolute bottom-full left-1/2 -translate-x-1/2 mb-2 w-48 bg-[#10284B] text-white text-xs rounded-lg p-3 shadow-lg z-10">
+                <div className="absolute bottom-full left-1/2 -translate-x-1/2 mb-2 w-48 bg-[#10284B] text-white text-xs rounded-lg p-3 shadow-lg z-50">
                   {badge.tooltip}
                   <div className="absolute top-full left-1/2 -translate-x-1/2 -mt-1 w-2 h-2 bg-[#10284B] rotate-45" />
                 </div>
