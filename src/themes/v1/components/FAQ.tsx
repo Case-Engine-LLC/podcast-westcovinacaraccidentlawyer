@@ -4,11 +4,7 @@ import React, { useState } from 'react'
 import { Plus, Minus } from 'lucide-react'
 import { faqGroups } from '@/data/siteData'
 
-const levelStyles: Record<string, string> = {
-  h2: 'text-lg md:text-xl font-bold',
-  h3: 'text-base md:text-lg font-semibold',
-  h4: 'text-sm md:text-base font-medium',
-}
+const FAQ_QUESTION_STYLE = 'text-base md:text-lg font-semibold'
 
 const FAQ = () => {
   const [openItem, setOpenItem] = useState<string | null>('0-0')
@@ -62,8 +58,6 @@ const FAQ = () => {
           <div className="flex flex-col gap-3">
             {activeGroup.questions.map((faq, faqIndex) => {
               const itemKey = `${activeTab}-${faqIndex}`
-              const level = faq.level || 'h3'
-              const style = levelStyles[level] || levelStyles.h3
               return (
                 <div
                   key={faqIndex}
@@ -73,7 +67,7 @@ const FAQ = () => {
                     className="w-full px-6 md:px-8 py-5 flex items-center justify-between text-left hover:bg-gray-50 transition-colors"
                     onClick={() => toggleItem(itemKey)}
                   >
-                    <span className={`${style} text-black pr-4`}>
+                    <span className={`${FAQ_QUESTION_STYLE} text-black pr-4`}>
                       {faq.question}
                     </span>
                     <span className="shrink-0">
