@@ -22,9 +22,9 @@ const XIcon = ({ size = 20, className = '' }: { size?: number; className?: strin
 const Footer = () => {
   const currentYear = new Date().getFullYear()
 
-  const epList = (episodesData as Array<{ id: number | string; number?: number; title: string }>).map(ep => ({
+  const epList = (episodesData as Array<{ id: number | string; number?: number; title: string; slug?: string }>).map(ep => ({
     name: `Episode ${ep.number ?? ep.id}: ${(ep.title || '').split(':')[0]}`,
-    href: `/episode/${ep.slug}`,
+    href: `/episode/${ep.slug ?? ep.id}`,
   }))
 
   return (

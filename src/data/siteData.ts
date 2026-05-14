@@ -43,6 +43,7 @@ export const compliance = {
 
 export const episode = {
   "number": 1,
+  "slug": "understanding-your-rights-after-a-car-accident-in-west-covina",
   "title": "Understanding Your Rights After a Car Accident in West Covina",
   "date": "01.15.24",
   "duration": "00:45:30",
