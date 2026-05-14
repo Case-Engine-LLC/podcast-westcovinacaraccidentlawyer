@@ -1,25 +1,40 @@
 'use client'
 
-import React, { useState } from 'react'
+import React, { useState, useEffect } from 'react'
+import { createPortal } from 'react-dom'
 import Image from 'next/image'
 import { Info } from 'lucide-react'
 import { trustBadges } from '@/data/siteData'
 
+type TooltipState = { text: string; top: number; left: number }
+
 const TrustBadges = () => {
-  const [hoveredBadge, setHoveredBadge] = useState<number | null>(null)
+  const [tooltip, setTooltip] = useState<TooltipState | null>(null)
+  const [mounted, setMounted] = useState(false)
+
+  useEffect(() => setMounted(true), [])
 
   const badges = trustBadges
 
+  const showTooltip = (e: React.MouseEvent, text: string) => {
+    const rect = (e.currentTarget as HTMLElement).getBoundingClientRect()
+    setTooltip({
+      text,
+      top: rect.top,
+      left: rect.left + rect.width / 2,
+    })
+  }
+
+  const hideTooltip = () => setTooltip(null)
+
   return (
     <div className="overflow-hidden py-6">
-      <div className="flex animate-marquee-fast md:animate-marquee-slower">
+      <div className="flex animate-marquee-fast md:animate-marquee-slower hover:[animation-play-state:paused]">
         {/* First set */}
         {badges.map((badge) => (
           <div
             key={`first-${badge.id}`}
             className="relative flex items-center gap-0.5 mx-6 md:mx-16 shrink-0 cursor-pointer"
-            onMouseEnter={() => setHoveredBadge(badge.id)}
-            onMouseLeave={() => setHoveredBadge(null)}
             onClick={() => badge.href && window.location.assign(badge.href)}
           >
             <div className="w-48 h-48 flex items-center justify-center">
@@ -38,15 +53,12 @@ const TrustBadges = () => {
               )}
             </div>
 
-            <button className="relative">
+            <button
+              className="relative"
+              onMouseEnter={(e) => showTooltip(e, badge.tooltip)}
+              onMouseLeave={hideTooltip}
+            >
               <Info size={20} className="text-gray-400 hover:text-[#10284B] transition-colors" />
-
-              {hoveredBadge === badge.id && (
-                <div className="absolute bottom-full left-1/2 -translate-x-1/2 mb-2 w-48 bg-[#10284B] text-white text-xs rounded-lg p-3 shadow-lg z-10">
-                  {badge.tooltip}
-                  <div className="absolute top-full left-1/2 -translate-x-1/2 -mt-1 w-2 h-2 bg-[#10284B] rotate-45" />
-                </div>
-              )}
             </button>
           </div>
         ))}
@@ -56,8 +68,6 @@ const TrustBadges = () => {
           <div
             key={`second-${badge.id}`}
             className="relative flex items-center gap-0.5 mx-6 md:mx-16 shrink-0 cursor-pointer"
-            onMouseEnter={() => setHoveredBadge(badge.id + 100)}
-            onMouseLeave={() => setHoveredBadge(null)}
             onClick={() => badge.href && window.location.assign(badge.href)}
           >
             <div className="w-48 h-48 flex items-center justify-center">
@@ -76,19 +86,35 @@ const TrustBadges = () => {
               )}
             </div>
 
-            <button className="relative">
+            <button
+              className="relative"
+              onMouseEnter={(e) => showTooltip(e, badge.tooltip)}
+              onMouseLeave={hideTooltip}
+            >
               <Info size={20} className="text-gray-400 hover:text-[#10284B] transition-colors" />
-
-              {hoveredBadge === badge.id + 100 && (
-                <div className="absolute bottom-full left-1/2 -translate-x-1/2 mb-2 w-48 bg-[#10284B] text-white text-xs rounded-lg p-3 shadow-lg z-10">
-                  {badge.tooltip}
-                  <div className="absolute top-full left-1/2 -translate-x-1/2 -mt-1 w-2 h-2 bg-[#10284B] rotate-45" />
-                </div>
-              )}
             </button>
           </div>
         ))}
       </div>
+
+      {/* Portal-rendered tooltip — escapes marquee stacking context */}
+      {mounted && tooltip && createPortal(
+        <div
+          style={{
+            position: 'fixed',
+            top: tooltip.top - 8,
+            left: tooltip.left,
+            transform: 'translate(-50%, -100%)',
+            zIndex: 9999,
+            pointerEvents: 'none',
+          }}
+          className="w-48 bg-[#10284B] text-white text-xs rounded-lg p-3 shadow-lg"
+        >
+          {tooltip.text}
+          <div className="absolute top-full left-1/2 -translate-x-1/2 -mt-1 w-2 h-2 bg-[#10284B] rotate-45" />
+        </div>,
+        document.body
+      )}
     </div>
   )
 }
