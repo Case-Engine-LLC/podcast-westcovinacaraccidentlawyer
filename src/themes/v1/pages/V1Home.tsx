@@ -83,7 +83,7 @@ const V1Home = ({ episodes }: V1HomeProps) => {
       <Header />
 
       <main>
-        <Hero />
+        <Hero latestEpisode={episodes?.[0]} />
         <TrustBadges />
         <StatsBanner />
         <About />

@@ -8,8 +8,8 @@ export const siteConfig = {
   "tagline": "NEW EPISODE",
   "podcastUrl": "https://podcast-westcovinacaraccidentlawyer.vercel.app",
   "platformLinks": {
-    "apple": "#",
-    "spotify": "#"
+    "apple": "https://podcasts.apple.com/us/channel/lem-garcia/id6769300227",
+    "spotify": "https://open.spotify.com/show/2slppQw4yYc57jlY4UIHCn"
   },
   "formCTA": {
     "text": "Free Consultation",
