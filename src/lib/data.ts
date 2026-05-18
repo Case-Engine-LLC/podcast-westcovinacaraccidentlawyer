@@ -85,8 +85,13 @@ function normalizeStaticEpisode(ep: Record<string, unknown>): Episode {
 let feedCache: { episodes: Episode[]; fetchedAt: number } | null = null
 
 export async function getAllEpisodes(): Promise<Episode[]> {
+  // Only surface episodes that actually have audio. Placeholder/unreleased
+  // entries in static data have no audioUrl and would render dead play buttons
+  // on episode lists and detail pages, so we filter them out here at the source.
+  const onlyReleased = (eps: Episode[]) => eps.filter(ep => Boolean(ep.audioUrl))
+
   if (!RSS_URL) {
-    return (staticEpisodes as Record<string, unknown>[]).map(normalizeStaticEpisode)
+    return onlyReleased((staticEpisodes as Record<string, unknown>[]).map(normalizeStaticEpisode))
   }
 
   // Simple in-memory cache for same request cycle
@@ -96,12 +101,12 @@ export async function getAllEpisodes(): Promise<Episode[]> {
 
   try {
     const feed = await fetchPodcastFeed(RSS_URL)
-    const episodes = feed.episodes.map(rssEpisodeToEpisode)
+    const episodes = onlyReleased(feed.episodes.map(rssEpisodeToEpisode))
     feedCache = { episodes, fetchedAt: Date.now() }
     return episodes
   } catch (e) {
     console.error('RSS fetch failed, falling back to static data:', e)
-    return (staticEpisodes as Record<string, unknown>[]).map(normalizeStaticEpisode)
+    return onlyReleased((staticEpisodes as Record<string, unknown>[]).map(normalizeStaticEpisode))
   }
 }
 
