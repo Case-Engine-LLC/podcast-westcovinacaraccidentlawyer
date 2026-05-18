@@ -51,7 +51,7 @@ const EpisodeContent = ({ episode, transcript }: EpisodeContentProps) => {
             </div>
           )}
 
-          {/* Audio Player */}
+          {/* Audio Player — only when episode has audio. Placeholder/Coming-Soon episodes get a clearly non-interactive state. */}
           {episode?.audioUrl ? (
             <div className="mb-12">
               <AudioPlayer
@@ -61,10 +61,12 @@ const EpisodeContent = ({ episode, transcript }: EpisodeContentProps) => {
               />
             </div>
           ) : !youtubeEmbed ? (
-            <div className="relative w-full aspect-video bg-[#3a3a3a] rounded-3xl overflow-hidden mb-12 flex items-center justify-center group cursor-pointer">
-              <div className="relative z-10 w-20 h-20 rounded-full bg-secondary flex items-center justify-center group-hover:scale-110 transition-transform">
-                <Play size={32} className="text-white fill-white ml-1" />
+            <div className="relative w-full aspect-video bg-[#1f1f2e] border border-white/10 rounded-3xl overflow-hidden mb-12 flex flex-col items-center justify-center gap-3">
+              <div className="w-16 h-16 rounded-full bg-white/5 flex items-center justify-center">
+                <Play size={28} className="text-white/30 ml-1" />
               </div>
+              <p className="text-white/70 text-base md:text-lg font-semibold">Coming Soon</p>
+              <p className="text-white/40 text-sm md:text-base">This episode has not been released yet.</p>
             </div>
           ) : null}
 
