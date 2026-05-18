@@ -403,7 +403,7 @@ export const topicalEntryGrid = {
         {
           "title": "Rear-End Collision Claims",
           "description": "Learn about liability, common injuries, and compensation in rear-end car accidents on West Covina roads and California highways.",
-          "href": "https://www.lemgarcialaw.com/law/lawyer/car-accident/can-you-sue-for-a-rear-end-collision",
+          "href": "https://www.lemgarcialaw.com/",
           "image": "/topical/icon-pa-car.svg"
         },
         {
@@ -415,7 +415,7 @@ export const topicalEntryGrid = {
         {
           "title": "Hit-and-Run Accidents",
           "description": "What to do after a hit-and-run crash and how uninsured motorist coverage can protect you in California.",
-          "href": "https://www.lemgarcialaw.com/blog/what-you-need-to-know-about-california-hit-and-run-laws/",
+          "href": "https://www.lemgarcialaw.com/",
           "image": "/topical/icon-svc-investigate.svg"
         },
         {
@@ -473,7 +473,7 @@ export const topicalEntryGrid = {
         {
           "title": "Jackknife Accident Claims",
           "description": "Understanding the causes of jackknife truck accidents and pursuing compensation for catastrophic injuries.",
-          "href": "https://www.lemgarcialaw.com/law/lawyer/car-accident/why-you-should-keep-a-diary-after-a-car-accident-to-support-your-claim",
+          "href": "https://www.lemgarcialaw.com/",
           "image": "/topical/icon-svc-investigate.svg"
         },
         {
@@ -496,7 +496,7 @@ export const topicalEntryGrid = {
         {
           "title": "Bicycle vs. Car Collisions",
           "description": "Understanding cyclist rights under California law and recovering compensation for bicycle accident injuries.",
-          "href": "https://www.lemgarcialaw.com/law/lawyer/car-accident/words-to-choose-carefully-at-your-car-collision-scene",
+          "href": "https://www.lemgarcialaw.com/law/lawyer/bicycle-accident/",
           "image": "/topical/icon-pa-bike.svg"
         },
         {
@@ -508,7 +508,7 @@ export const topicalEntryGrid = {
         {
           "title": "Dooring Accident Claims",
           "description": "Pursuing compensation when cyclists are injured by car doors opening into bike lanes or traffic.",
-          "href": "https://www.lemgarcialaw.com/law/lawyer/car-accident/why-you-should-keep-a-diary-after-a-car-accident-to-support-your-claim",
+          "href": "https://www.lemgarcialaw.com/",
           "image": "/topical/icon-svc-liability.svg"
         }
       ]
@@ -531,13 +531,13 @@ export const topicalEntryGrid = {
         {
           "title": "Wrongful Death Claims",
           "description": "Helping California families recover damages after losing a loved one to another party's negligence.",
-          "href": "https://www.lemgarcialaw.com/covid-19-coronavirus-wrongful-death-and-injury-claims/",
+          "href": "https://www.lemgarcialaw.com/law/lawyer/wrongful-death/",
           "image": "/topical/icon-pa-wrongful-death.svg"
         },
         {
           "title": "Personal Injury Settlements",
           "description": "How to value your personal injury claim and what to expect during settlement negotiations in California.",
-          "href": "https://www.lemgarcialaw.com/law/lawyer/personal-injury/how-do-i-increase-my-personal-injury-settlement/",
+          "href": "https://www.lemgarcialaw.com/law/lawyer/personal-injury/",
           "image": "/topical/icon-svc-liability.svg"
         }
       ]
