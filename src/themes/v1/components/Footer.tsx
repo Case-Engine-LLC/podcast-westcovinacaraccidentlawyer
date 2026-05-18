@@ -22,10 +22,14 @@ const XIcon = ({ size = 20, className = '' }: { size?: number; className?: strin
 const Footer = () => {
   const currentYear = new Date().getFullYear()
 
-  const epList = (episodesData as Array<{ id: number | string; number?: number; title: string; slug?: string }>).map(ep => ({
-    name: `Episode ${ep.number ?? ep.id}: ${(ep.title || '').split(':')[0]}`,
-    href: `/episode/${ep.slug ?? ep.id}`,
-  }))
+  // Only surface episodes that actually have audio. Placeholder/unreleased
+  // entries have no audioUrl and would produce dead links here.
+  const epList = (episodesData as Array<{ id: number | string; number?: number; title: string; slug?: string; audioUrl?: string }>)
+    .filter(ep => Boolean(ep.audioUrl))
+    .map(ep => ({
+      name: `Episode ${ep.number ?? ep.id}: ${(ep.title || '').split(':')[0]}`,
+      href: `/episode/${ep.slug ?? ep.id}`,
+    }))
 
   return (
     <footer className="bg-[#0a0a1a] text-white">
@@ -71,21 +75,23 @@ const Footer = () => {
             </div>
           </div>
 
-          {/* Right Column - Episodes */}
-          <div>
-            <h3 className="text-xl font-bold text-white mb-6">Episodes</h3>
-            <div className="grid grid-cols-3 gap-x-8 gap-y-4">
-              {epList.map((episode, index) => (
-                <Link
-                  key={index}
-                  href={episode.href}
-                  className="text-base text-white/80 hover:text-white transition-colors"
-                >
-                  {episode.name}
-                </Link>
-              ))}
+          {/* Right Column - Episodes (only when there are released episodes to link to) */}
+          {epList.length > 0 && (
+            <div>
+              <h3 className="text-xl font-bold text-white mb-6">Episodes</h3>
+              <div className="grid grid-cols-3 gap-x-8 gap-y-4">
+                {epList.map((episode, index) => (
+                  <Link
+                    key={index}
+                    href={episode.href}
+                    className="text-base text-white/80 hover:text-white transition-colors"
+                  >
+                    {episode.name}
+                  </Link>
+                ))}
+              </div>
             </div>
-          </div>
+          )}
         </div>
       </div>
 
