@@ -129,7 +129,7 @@ const LatestEpisodes = ({ episodes: propEpisodes }: LatestEpisodesProps) => {
                   <div className="md:col-span-4">
                     <div className="w-full aspect-square bg-gray-700 rounded-2xl flex items-center justify-center overflow-hidden">
                       <img
-                        src="/cover-placeholder.jpg"
+                        src="/episode-art.avif"
                         alt={episode.title}
                         className="w-full h-full object-cover"
                       />

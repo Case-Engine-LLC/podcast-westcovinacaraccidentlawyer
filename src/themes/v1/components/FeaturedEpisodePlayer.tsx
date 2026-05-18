@@ -80,7 +80,7 @@ const FeaturedEpisodePlayer = ({
   }, [isMuted])
 
   const progress = totalDuration > 0 ? (currentTime / totalDuration) * 100 : 0
-  const coverSrc = imageUrl || '/cover-placeholder.jpg'
+  const coverSrc = imageUrl || '/episode-art.avif'
 
   return (
     <div className="bg-white rounded-xl p-5 md:p-6 shadow-sm">

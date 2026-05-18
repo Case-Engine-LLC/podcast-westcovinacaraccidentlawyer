@@ -36,6 +36,8 @@ const SchemaJsonLd = () => {
   }
 
   type EpisodeLike = {
+    slug?: string
+    id?: number
     number?: number
     title: string
     description: string
@@ -45,25 +47,28 @@ const SchemaJsonLd = () => {
   }
   const allEpisodes: EpisodeLike[] =
     episodes && episodes.length > 0 ? (episodes as unknown as EpisodeLike[]) : [episode as EpisodeLike]
-  const podcastEpisodes = allEpisodes.map((ep, idx) => ({
-    '@context': 'https://schema.org',
-    '@type': 'PodcastEpisode',
-    '@id': `${podcastUrl}/#episode-${ep.number || idx + 1}`,
-    episodeNumber: ep.number,
-    name: ep.title,
-    description: ep.description,
-    datePublished: ep.date,
-    timeRequired: ep.duration,
-    url: `${podcastUrl}/#episodes`,
-    partOfSeries: { '@id': `${podcastUrl}/#podcast` },
-    associatedMedia: ep.audioUrl
-      ? {
-          '@type': 'MediaObject',
-          contentUrl: ep.audioUrl,
-          encodingFormat: 'audio/mpeg',
-        }
-      : undefined,
-  }))
+  const podcastEpisodes = allEpisodes.map((ep, idx) => {
+    const slugPart = ep.slug || ep.id || ep.number || idx + 1
+    return {
+      '@context': 'https://schema.org',
+      '@type': 'PodcastEpisode',
+      '@id': `${podcastUrl}/#episode-${ep.number || idx + 1}`,
+      episodeNumber: ep.number,
+      name: ep.title,
+      description: ep.description,
+      datePublished: ep.date,
+      timeRequired: ep.duration,
+      url: `${podcastUrl}/episode/${slugPart}`,
+      partOfSeries: { '@id': `${podcastUrl}/#podcast` },
+      associatedMedia: ep.audioUrl
+        ? {
+            '@type': 'MediaObject',
+            contentUrl: ep.audioUrl,
+            encodingFormat: 'audio/mpeg',
+          }
+        : undefined,
+    }
+  })
 
   const hostProfile = authorProfiles && Object.values(authorProfiles)[0]
   const hostSchema = hostProfile
@@ -98,12 +103,16 @@ const SchemaJsonLd = () => {
     logo: `${podcastUrl}/logo.svg`,
     description: footer.description,
     address: contact.address
-      ? {
-          '@type': 'PostalAddress',
-          streetAddress: contact.address,
-          addressRegion: compliance.jurisdiction,
-          addressCountry: 'US',
-        }
+      ? (() => {
+          const parts = contact.address.split(',').map(s => s.trim()).filter(Boolean)
+          const addressLocality = parts[0] || undefined
+          return {
+            '@type': 'PostalAddress',
+            ...(addressLocality ? { addressLocality } : {}),
+            addressRegion: compliance.jurisdiction || parts[1] || undefined,
+            addressCountry: 'US',
+          }
+        })()
       : undefined,
     aggregateRating: stats?.rating
       ? {
