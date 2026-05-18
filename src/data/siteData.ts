@@ -349,7 +349,7 @@ export const episodes = [
       "Common Mistakes That Harm Your Claim",
       "When to Contact a Personal Injury Attorney"
     ],
-    "logo": "/images/logo.svg",
+    "logo": "",
     "youtubeUrl": ""
   },
   {
@@ -377,7 +377,7 @@ export const episodes = [
       "Documenting Severe Injuries",
       "Maximizing Your Motorcycle Accident Settlement"
     ],
-    "logo": "/images/logo.svg",
+    "logo": "",
     "youtubeUrl": ""
   }
 ];
