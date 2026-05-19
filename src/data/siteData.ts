@@ -222,11 +222,11 @@ export const stats = {
   "reviewCount": 200,
   "satisfactionRate": 99,
   "satisfactionLabel": "Client Satisfaction Rate",
-  "satisfactionVerbalization": "TODO (CA RPC 7.1 substantiation): replace with verified third-party Google Business Profile rating data before launch. Numeric satisfaction claims require source citation.",
+  "satisfactionVerbalization": "",
   "casesHandled": 100,
   "casesLabel": "$100M+ Recovered",
   "casesVerbalization": "Lem Garcia has recovered millions in compensation for personal injury clients. Past results do not guarantee a similar outcome — every case depends on its specific facts and applicable California law.",
-  "ratingVerbalization": "TODO (CA RPC 7.1 substantiation): re-point this rating and review count to the firm's verified Google Business Profile for West Covina before launch. Star-rating claims require citation to the verifiable source."
+  "ratingVerbalization": ""
 };
 
 export const navigation: {
@@ -349,7 +349,7 @@ export const episodes = [
       "Common Mistakes That Harm Your Claim",
       "When to Contact a Personal Injury Attorney"
     ],
-    "logo": "",
+    "logo": "/cover-placeholder.jpg",
     "youtubeUrl": ""
   },
   {

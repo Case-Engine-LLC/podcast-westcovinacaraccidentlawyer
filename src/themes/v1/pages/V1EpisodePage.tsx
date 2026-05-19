@@ -83,7 +83,7 @@ const V1EpisodePage = ({ episodeId, episode: rssEpisode, allEpisodes, transcript
       />
       <Header variant="light" />
 
-      <main className="pt-[6rem]">
+      <main className="pt-[7rem] md:pt-[9rem]">
         <EpisodeHero episode={rssEpisode} />
         <EpisodeContent episode={rssEpisode} transcript={transcript} />
         <OtherEpisodes episodes={allEpisodes} />

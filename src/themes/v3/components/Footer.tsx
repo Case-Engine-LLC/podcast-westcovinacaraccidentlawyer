@@ -47,17 +47,12 @@ const Footer = () => {
             <h4 className="text-white font-bold mb-6">Podcast</h4>
             <ul className="space-y-4 text-sm text-slate-400">
               <li><Link href="#episodes" className="hover:text-amber-500 transition-colors">Latest Episodes</Link></li>
-              <li><Link href="#episodes" className="hover:text-amber-500 transition-colors">Season 1 Archive</Link></li>
-              <li><Link href="#about" className="hover:text-amber-500 transition-colors">Guest Speakers</Link></li>
-              <li><Link href="#subscribe" className="hover:text-amber-500 transition-colors">Subscribe</Link></li>
             </ul>
           </div>
 
-          {/* Resources */}
+          {/* Contact */}
           <div>
-            <h4 className="text-white font-bold mb-6">Resources</h4>
             <ul className="space-y-4 text-sm text-slate-400">
-              <li><a href="#car-accident-attorney" className="hover:text-amber-500 transition-colors">Car Accident Guide</a></li>
               <li><a href={`tel:${contact.phone}`} className="hover:text-amber-500 transition-colors">Contact Attorneys</a></li>
             </ul>
           </div>

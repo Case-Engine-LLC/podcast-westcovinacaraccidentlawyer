@@ -3,7 +3,7 @@
 import React, { useState, useRef, useEffect, useCallback } from 'react'
 import Link from 'next/link'
 import { Play, Pause, Volume2, VolumeX, ChevronRight } from 'lucide-react'
-import { episode as defaultEpisode } from '@/data/siteData'
+import { episode as defaultEpisode, episodes as staticEpisodesData } from '@/data/siteData'
 
 interface FeaturedEpisodePlayerProps {
   episodeNumber?: string
@@ -80,7 +80,8 @@ const FeaturedEpisodePlayer = ({
   }, [isMuted])
 
   const progress = totalDuration > 0 ? (currentTime / totalDuration) * 100 : 0
-  const coverSrc = imageUrl || '/episode-art.avif'
+  const fallbackArt = staticEpisodesData.find((e) => (e as { logo?: string }).logo && (e as { logo?: string }).logo!.trim() !== '')?.logo as string | undefined
+  const coverSrc = imageUrl || fallbackArt
 
   return (
     <div className="bg-white rounded-xl p-5 md:p-6 shadow-sm">

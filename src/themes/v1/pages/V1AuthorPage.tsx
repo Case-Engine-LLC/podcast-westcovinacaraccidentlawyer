@@ -188,7 +188,7 @@ const V1AuthorPage = ({ slug }: V1AuthorPageProps) => {
       />
       <Header variant="light" />
 
-      <main className="pt-[6rem]">
+      <main className="pt-[7rem] md:pt-[9rem]">
         {/* Author Hero */}
         <section className="relative bg-primary py-16 md:py-24 overflow-hidden">
           <div className="max-w-container mx-auto px-6 md:px-12">
