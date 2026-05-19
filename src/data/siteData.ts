@@ -403,25 +403,25 @@ export const topicalEntryGrid = {
         {
           "title": "Rear-End Collision Claims",
           "description": "Learn about liability, common injuries, and compensation in rear-end car accidents on West Covina roads and California highways.",
-          "href": "https://www.lemgarcialaw.com/",
+          "href": "https://www.lemgarcialaw.com/law/lawyer/car-accident/",
           "image": "/topical/icon-pa-car.svg"
         },
         {
           "title": "Intersection Accident Cases",
           "description": "Understanding fault determination and legal options when car accidents occur at West Covina intersections and traffic signals.",
-          "href": "https://www.lemgarcialaw.com/",
+          "href": "https://www.lemgarcialaw.com/law/lawyer/car-accident/",
           "image": "/topical/icon-svc-liability.svg"
         },
         {
           "title": "Hit-and-Run Accidents",
           "description": "What to do after a hit-and-run crash and how uninsured motorist coverage can protect you in California.",
-          "href": "https://www.lemgarcialaw.com/",
+          "href": "https://www.lemgarcialaw.com/law/lawyer/car-accident/",
           "image": "/topical/icon-svc-investigate.svg"
         },
         {
           "title": "Distracted Driving Crashes",
           "description": "Holding negligent drivers accountable for accidents caused by texting, phone use, and other distractions.",
-          "href": "https://www.lemgarcialaw.com/law/lawyer/car-accident/6-proven-strategies-for-safer-driving/",
+          "href": "https://www.lemgarcialaw.com/law/lawyer/car-accident/",
           "image": "/topical/icon-svc-defense.svg"
         }
       ]
@@ -432,25 +432,25 @@ export const topicalEntryGrid = {
         {
           "title": "Lane-Splitting Accidents",
           "description": "Understanding California's lane-splitting laws and how they affect motorcycle accident claims and liability.",
-          "href": "https://www.lemgarcialaw.com/",
+          "href": "https://www.lemgarcialaw.com/law/lawyer/motorcycle-accident/",
           "image": "/topical/icon-pa-moto.svg"
         },
         {
           "title": "Left-Turn Motorcycle Crashes",
           "description": "Common scenarios where cars turn left in front of motorcycles and how to prove driver negligence.",
-          "href": "https://www.lemgarcialaw.com/cities/ontario/ontario-motorcycle-accident-lawyer/",
+          "href": "https://www.lemgarcialaw.com/law/lawyer/motorcycle-accident/",
           "image": "/topical/icon-svc-liability.svg"
         },
         {
           "title": "Road Hazard Injuries",
           "description": "Pursuing claims against government entities when poor road conditions cause motorcycle accidents in West Covina.",
-          "href": "https://www.lemgarcialaw.com/",
+          "href": "https://www.lemgarcialaw.com/law/lawyer/motorcycle-accident/",
           "image": "/topical/icon-svc-comply.svg"
         },
         {
           "title": "Severe Injury Compensation",
           "description": "Recovering full damages for catastrophic injuries common in motorcycle accidents, including brain and spinal cord injuries.",
-          "href": "https://www.lemgarcialaw.com/law/lawyer/car-accident/compensation-for-motorcycle-accidents-in-california/",
+          "href": "https://www.lemgarcialaw.com/law/lawyer/motorcycle-accident/",
           "image": "/topical/icon-pa-medical.svg"
         }
       ]
@@ -461,25 +461,25 @@ export const topicalEntryGrid = {
         {
           "title": "Commercial Truck Collisions",
           "description": "Navigating complex liability issues involving trucking companies, drivers, and multiple insurance policies.",
-          "href": "https://www.lemgarcialaw.com/cities/cerritos/cerritos-truck-accident-lawyer/",
+          "href": "https://www.lemgarcialaw.com/law/lawyer/truck-accident/",
           "image": "/topical/icon-pa-truck.svg"
         },
         {
           "title": "Truck Driver Negligence",
           "description": "Holding truck drivers accountable for violations of federal safety regulations and hours-of-service rules.",
-          "href": "https://www.lemgarcialaw.com/cities/cerritos/cerritos-truck-accident-lawyer/",
+          "href": "https://www.lemgarcialaw.com/law/lawyer/truck-accident/",
           "image": "/topical/icon-svc-liability.svg"
         },
         {
           "title": "Jackknife Accident Claims",
           "description": "Understanding the causes of jackknife truck accidents and pursuing compensation for catastrophic injuries.",
-          "href": "https://www.lemgarcialaw.com/",
+          "href": "https://www.lemgarcialaw.com/law/lawyer/truck-accident/",
           "image": "/topical/icon-svc-investigate.svg"
         },
         {
           "title": "Truck Maintenance Failures",
           "description": "Proving liability when poor maintenance or defective truck parts contribute to serious accidents.",
-          "href": "https://www.lemgarcialaw.com/cities/cerritos/cerritos-truck-accident-lawyer/",
+          "href": "https://www.lemgarcialaw.com/law/lawyer/truck-accident/",
           "image": "/topical/icon-svc-comply.svg"
         }
       ]
@@ -490,7 +490,7 @@ export const topicalEntryGrid = {
         {
           "title": "Crosswalk Accident Cases",
           "description": "Protecting pedestrian rights and pursuing claims when drivers fail to yield at West Covina crosswalks.",
-          "href": "https://www.lemgarcialaw.com/",
+          "href": "https://www.lemgarcialaw.com/law/lawyer/bicycle-accident/",
           "image": "/topical/icon-pa-pedestrian.svg"
         },
         {
@@ -502,13 +502,13 @@ export const topicalEntryGrid = {
         {
           "title": "Parking Lot Pedestrian Injuries",
           "description": "Establishing liability for pedestrian accidents in parking lots, shopping centers, and commercial properties.",
-          "href": "https://www.lemgarcialaw.com/law/lawyer/pedestrian-accident/",
+          "href": "https://www.lemgarcialaw.com/law/lawyer/bicycle-accident/",
           "image": "/topical/icon-svc-investigate.svg"
         },
         {
           "title": "Dooring Accident Claims",
           "description": "Pursuing compensation when cyclists are injured by car doors opening into bike lanes or traffic.",
-          "href": "https://www.lemgarcialaw.com/",
+          "href": "https://www.lemgarcialaw.com/law/lawyer/bicycle-accident/",
           "image": "/topical/icon-svc-liability.svg"
         }
       ]
@@ -519,19 +519,19 @@ export const topicalEntryGrid = {
         {
           "title": "Catastrophic Brain Injury Claims",
           "description": "Pursuing maximum compensation for traumatic brain injuries from West Covina car, motorcycle, and workplace accidents.",
-          "href": "https://www.lemgarcialaw.com/law/lawyer/brain-injury-3/",
+          "href": "https://www.lemgarcialaw.com/law/lawyer/personal-injury/",
           "image": "/topical/icon-pa-medical.svg"
         },
         {
           "title": "Spinal Cord Injury Cases",
           "description": "Recovering lifetime medical costs and lost earning capacity in spinal cord injury cases throughout California.",
-          "href": "https://www.lemgarcialaw.com/law/lawyer/spinal-cord-injury/",
+          "href": "https://www.lemgarcialaw.com/law/lawyer/personal-injury/",
           "image": "/topical/icon-pa-medical.svg"
         },
         {
           "title": "Wrongful Death Claims",
           "description": "Helping California families recover damages after losing a loved one to another party's negligence.",
-          "href": "https://www.lemgarcialaw.com/law/lawyer/wrongful-death/",
+          "href": "https://www.lemgarcialaw.com/law/lawyer/personal-injury/",
           "image": "/topical/icon-pa-wrongful-death.svg"
         },
         {
@@ -554,19 +554,19 @@ export const topicalEntryGrid = {
         {
           "title": "Dog Bite Injury Claims",
           "description": "Understanding California's strict liability dog bite laws and recovering damages for animal attack injuries.",
-          "href": "https://www.lemgarcialaw.com/law/lawyer/dog-bite/",
+          "href": "https://www.lemgarcialaw.com/law/lawyer/slip-and-fall/",
           "image": "/topical/icon-pa-wrongful-death.svg"
         },
         {
           "title": "Inadequate Security Cases",
           "description": "Holding property owners liable when inadequate security leads to assaults or injuries on their premises.",
-          "href": "https://www.lemgarcialaw.com/",
+          "href": "https://www.lemgarcialaw.com/law/lawyer/slip-and-fall/",
           "image": "/topical/icon-svc-defense.svg"
         },
         {
           "title": "Swimming Pool Accidents",
           "description": "Pursuing claims for drowning and near-drowning incidents caused by negligent pool maintenance or supervision.",
-          "href": "https://www.lemgarcialaw.com/",
+          "href": "https://www.lemgarcialaw.com/law/lawyer/slip-and-fall/",
           "image": "/topical/icon-phase-consult.svg"
         }
       ]
