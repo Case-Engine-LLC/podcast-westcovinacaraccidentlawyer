@@ -163,51 +163,51 @@ export const content = {
 export const testimonials = [
   {
     "id": 1,
-    "name": "Maria T.",
-    "initials": "MT",
-    "role": "Google Reviewer",
+    "name": "Joe G.",
+    "initials": "JG",
+    "role": "Verified Client",
     "rating": 5,
-    "text": "Lem Garcia and his team were absolutely phenomenal after my car accident in West Covina. They handled everything professionally, kept me informed every step of the way, and secured a settlement that exceeded my expectations. I highly recommend Lem Garcia Law to anyone who has been injured in an accident."
+    "text": "Lem Garcia Law was very helpful and professional in handling my case. Valeria always made sure I was up to date."
   },
   {
     "id": 2,
-    "name": "Robert L.",
-    "initials": "RL",
-    "role": "Google Reviewer",
+    "name": "Biancca A.",
+    "initials": "BA",
+    "role": "Verified Client",
     "rating": 5,
-    "text": "After my motorcycle accident, I didn't know where to turn. Lem Garcia took my case and fought tirelessly for my rights. His knowledge of California personal injury law is impressive, and he genuinely cares about his clients. The settlement allowed me to focus on recovery without financial stress."
+    "text": "The process was a lot more difficult than I imagined. Thanks to Lem Garcia and his team, the process became much easier."
   },
   {
     "id": 3,
-    "name": "Jennifer M.",
-    "initials": "JM",
-    "role": "Google Reviewer",
+    "name": "Nardito A.",
+    "initials": "NA",
+    "role": "Verified Client",
     "rating": 5,
-    "text": "Lem Garcia handled my truck accident case with incredible professionalism and dedication. He explained the legal process clearly, answered all my questions promptly, and achieved an outstanding result. I'm grateful for his expertise and compassionate approach during such a difficult time."
+    "text": "Attorney Lem Garcia and staff were so helpful and I really appreciate the efforts they have given and shown to me."
   },
   {
     "id": 4,
-    "name": "David S.",
-    "initials": "DS",
-    "role": "Google Reviewer",
+    "name": "Paris S.",
+    "initials": "PS",
+    "role": "Verified Client",
     "rating": 5,
-    "text": "I was hit by a car while riding my bicycle in West Covina, and Lem Garcia Law made the entire legal process stress-free. They handled all communication with the insurance company and secured compensation that covered my medical bills and lost wages. Excellent service from start to finish."
+    "text": "Lem and his team are amazing. It was always very easy to contact him with any questions."
   },
   {
     "id": 5,
-    "name": "Patricia H.",
-    "initials": "PH",
-    "role": "Google Reviewer",
+    "name": "Gabriel A.",
+    "initials": "GA",
+    "role": "Verified Client",
     "rating": 5,
-    "text": "After my slip and fall accident, Lem Garcia provided exceptional legal representation. His attention to detail and aggressive negotiation skills resulted in a fair settlement. He truly goes above and beyond for his clients, and I wouldn't hesitate to recommend him to family and friends."
+    "text": "Lem and his fantastic team helped me through the case and made me feel like family. Very professional and trustworthy."
   },
   {
     "id": 6,
-    "name": "Michael K.",
-    "initials": "MK",
-    "role": "Google Reviewer",
+    "name": "Jennifer B.",
+    "initials": "JB",
+    "role": "Verified Client",
     "rating": 5,
-    "text": "Lem Garcia is an outstanding personal injury attorney who genuinely cares about his clients. After my rideshare accident, he worked tirelessly to build a strong case and negotiate with multiple insurance companies. The result was a settlement that far exceeded what I thought possible. Highly recommended!"
+    "text": "Always responded in a timely manner. Negotiated to get the most monetary reward for my case. Would recommend highly."
   }
 ];
 
