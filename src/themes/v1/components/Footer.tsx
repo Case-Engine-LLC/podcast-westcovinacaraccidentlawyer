@@ -51,7 +51,7 @@ const Footer = () => {
           {/* Left Column - Logo & Social */}
           <div>
             <div className="mb-6">
-              <img src="/logo.svg" alt={footer.logo} className="h-24 md:h-28 w-auto object-contain" />
+              <img src="/logo.png" alt={footer.logo} className="h-24 md:h-28 w-auto object-contain" />
             </div>
             <p className="text-base text-white/70 leading-relaxed mb-8 max-w-md">
               {footer.description}

@@ -25,11 +25,11 @@ const Hero = ({ latestEpisode }: HeroProps) => {
 
   return (
     <>
-    <section className="hero-section relative pt-[6rem] md:pt-[8rem] pb-12 md:pb-0 md:h-[90vh]">
+    <section className="hero-section relative pt-[6rem] md:pt-[8rem] pb-12 md:pb-0 md:min-h-[90vh] overflow-hidden">
       {/* Hero Background Image - indexable - Desktop */}
       <figure className="hidden md:block absolute inset-0 z-0 m-0">
         <img
-          src="/hero-placeholder.jpg"
+          src="/hero-bg.jpg"
           alt={content.heroTitle}
           className="w-full h-full object-cover object-[center_right]"
         />
@@ -38,14 +38,23 @@ const Hero = ({ latestEpisode }: HeroProps) => {
       {/* Hero Background Image - Mobile/Tablet */}
       <figure className="md:hidden absolute inset-0 z-0 m-0">
         <img
-          src="/hero-placeholder.jpg"
+          src="/hero-bg.jpg"
           alt={content.heroTitle}
           className="w-full h-full object-cover object-center"
         />
       </figure>
 
+      {/* Attorney Image - absolutely positioned so it doesn't stretch the section */}
+      <div className="hidden md:flex absolute bottom-0 right-0 lg:right-[4%] z-[1] h-[68%] lg:h-[78%] items-end pointer-events-none">
+        <img
+          src="/attorney.png"
+          alt={content.heroTitle}
+          className="h-full w-auto object-contain object-bottom block"
+        />
+      </div>
+
       {/* Marquee Banner */}
-      <div className="relative z-[1] bg-secondary py-3 md:py-4 overflow-hidden whitespace-nowrap -rotate-[2deg] transform origin-center">
+      <div className="relative z-[1] w-[110%] -ml-[5%] bg-secondary py-3 md:py-4 overflow-hidden whitespace-nowrap -rotate-[2deg] transform origin-center">
         <div className="flex animate-marquee">
           <span className="text-black font-bold uppercase tracking-[0.3em] text-xs md:text-sm inline-block">
             {siteConfig.tagline}&nbsp;&nbsp;&nbsp;&nbsp;/&nbsp;&nbsp;&nbsp;&nbsp;{siteConfig.tagline}&nbsp;&nbsp;&nbsp;&nbsp;/&nbsp;&nbsp;&nbsp;&nbsp;{siteConfig.tagline}&nbsp;&nbsp;&nbsp;&nbsp;/&nbsp;&nbsp;&nbsp;&nbsp;{siteConfig.tagline}&nbsp;&nbsp;&nbsp;&nbsp;/&nbsp;&nbsp;&nbsp;&nbsp;{siteConfig.tagline}&nbsp;&nbsp;&nbsp;&nbsp;/&nbsp;&nbsp;&nbsp;&nbsp;{siteConfig.tagline}&nbsp;&nbsp;&nbsp;&nbsp;/&nbsp;&nbsp;&nbsp;&nbsp;{siteConfig.tagline}&nbsp;&nbsp;&nbsp;&nbsp;/&nbsp;&nbsp;&nbsp;&nbsp;{siteConfig.tagline}&nbsp;&nbsp;&nbsp;&nbsp;/&nbsp;&nbsp;&nbsp;&nbsp;
@@ -57,7 +66,7 @@ const Hero = ({ latestEpisode }: HeroProps) => {
       </div>
 
       {/* Hero Content */}
-      <div className="relative z-[1] max-w-container mx-auto px-4 md:px-12 pt-6 md:pt-12 pb-0 md:pb-12">
+      <div className="relative z-[2] max-w-container mx-auto px-4 md:px-12 pt-6 md:pt-12 pb-0 md:pb-12">
         {/* Text Content */}
         <div className="md:w-[55%] pb-6 md:pb-16 text-center md:text-left">
           {/* Heading */}
@@ -108,6 +117,15 @@ const Hero = ({ latestEpisode }: HeroProps) => {
               <p className="text-sm md:text-base text-white/60 italic">Subscribe links coming soon.</p>
             )}
           </div>
+        </div>
+
+        {/* Attorney Image - Mobile only, stacked below the text */}
+        <div className="md:hidden flex justify-center mt-2">
+          <img
+            src="/attorney.png"
+            alt={content.heroTitle}
+            className="w-auto max-h-[55vh] object-contain object-bottom"
+          />
         </div>
 
       </div>
