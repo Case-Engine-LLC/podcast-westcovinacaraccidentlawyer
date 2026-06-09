@@ -125,12 +125,12 @@ const EpisodeHero = ({ episode: propEpisode }: EpisodeHeroProps) => {
             </div>
 
             {/* Right Image — Episode Thumbnail */}
-            <div className="relative w-full h-[280px] md:h-[380px] flex items-center justify-center">
-              <div className="w-full h-full rounded-2xl overflow-hidden">
+            <div className="relative w-full flex items-center justify-center">
+              <div className="w-full max-w-[480px] mx-auto aspect-square rounded-2xl overflow-hidden">
                 <img
                   src={coverImage}
                   alt={ep.title}
-                  className="w-full h-full object-cover object-top"
+                  className="w-full h-full object-cover"
                 />
               </div>
             </div>

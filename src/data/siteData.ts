@@ -4,7 +4,7 @@
  */
 
 export const siteConfig = {
-  "podcastName": "The Lem Garcia Accident Law Podcast",
+  "podcastName": "Car Accident Playbook With Lem Garcia",
   "tagline": "NEW EPISODE",
   "podcastUrl": "https://podcast-westcovinacaraccidentlawyer.vercel.app",
   "platformLinks": {
@@ -28,7 +28,7 @@ export const compliance = {
   "disclaimers": [
     {
       "kind": "general",
-      "text": "The information presented in The Lem Garcia Accident Law Podcast is general California legal information for educational purposes only and is not legal advice for your specific situation. Listening to this podcast does not create an attorney-client relationship with Lem Garcia or Lem Garcia Law - For Accidents and Injuries. For advice on your case, contact Lem Garcia Law at (626) 337-1111 for a free consultation."
+      "text": "The information presented in Car Accident Playbook With Lem Garcia is general California legal information for educational purposes only and is not legal advice for your specific situation. Listening to this podcast does not create an attorney-client relationship with Lem Garcia or Lem Garcia Law - For Accidents and Injuries. For advice on your case, contact Lem Garcia Law at (626) 337-1111 for a free consultation."
     },
     {
       "kind": "advertising",
@@ -57,7 +57,7 @@ export const attorney = {
   "bio": [
     "Lem Garcia is a dedicated personal injury attorney serving West Covina and the greater San Gabriel Valley with a commitment to fighting for accident victims' rights. With extensive experience handling complex car accident, truck collision, and wrongful death cases, Lem Garcia has built a reputation for aggressive advocacy and compassionate client service. Lem Garcia understands that accidents can devastate families financially, physically, and emotionally, which is why Lem Garcia Law approaches each case with personalized attention and a determination to secure maximum compensation.",
     "Throughout his legal career, Lem Garcia has successfully represented hundreds of clients injured in motor vehicle accidents, pedestrian collisions, bicycle accidents, and premises liability cases. Lem Garcia's deep knowledge of California personal injury law, combined with his understanding of the local West Covina court system and insurance company tactics, allows him to build compelling cases that deliver results. Lem Garcia takes pride in being accessible to clients, explaining complex legal processes in clear terms, and keeping families informed every step of the way.",
-    "Beyond his legal practice, Lem Garcia is passionate about educating the West Covina community on accident prevention and legal rights through The Lem Garcia Accident Law Podcast. This platform allows Lem Garcia to share valuable insights, answer common questions, and empower listeners with knowledge that can protect them before and after an accident occurs. When not advocating for clients or recording podcast episodes, Lem Garcia is actively involved in the West Covina community and committed to making local roads safer for everyone."
+    "Beyond his legal practice, Lem Garcia is passionate about educating the West Covina community on accident prevention and legal rights through Car Accident Playbook With Lem Garcia. This platform allows Lem Garcia to share valuable insights, answer common questions, and empower listeners with knowledge that can protect them before and after an accident occurs. When not advocating for clients or recording podcast episodes, Lem Garcia is actively involved in the West Covina community and committed to making local roads safer for everyone."
   ],
   "signature": "/images/signature.png",
   "photo": "/images/attorney.jpg"
@@ -101,17 +101,17 @@ export const chapters = [
 export const faqGroups = [
   {
     "label": "About The Podcast",
-    "description": "Common questions about The Lem Garcia Accident Law Podcast and what listeners can expect from each episode.",
+    "description": "Common questions about Car Accident Playbook With Lem Garcia and what listeners can expect from each episode.",
     "questions": [
       {
-        "question": "What is The Lem Garcia Accident Law Podcast about?",
+        "question": "What is Car Accident Playbook With Lem Garcia about?",
         "level": "h2",
-        "answer": "The Lem Garcia Accident Law Podcast provides valuable insights into personal injury law, accident prevention, and legal rights for injury victims in West Covina and throughout California. Lem Garcia shares his extensive experience handling car accidents, truck collisions, motorcycle crashes, and other personal injury cases to help listeners understand their legal options and protect their rights after an accident."
+        "answer": "Car Accident Playbook With Lem Garcia provides valuable insights into personal injury law, accident prevention, and legal rights for injury victims in West Covina and throughout California. Lem Garcia shares his extensive experience handling car accidents, truck collisions, motorcycle crashes, and other personal injury cases to help listeners understand their legal options and protect their rights after an accident."
       },
       {
         "question": "How Often are New Episodes Released?",
         "level": "h3",
-        "answer": "New episodes of The Lem Garcia Accident Law Podcast are released weekly, covering timely topics in personal injury law, recent case developments, and practical advice for accident victims. Each episode is designed to be informative yet accessible, typically running 20-30 minutes to fit into your busy schedule."
+        "answer": "New episodes of Car Accident Playbook With Lem Garcia are released weekly, covering timely topics in personal injury law, recent case developments, and practical advice for accident victims. Each episode is designed to be informative yet accessible, typically running 20-30 minutes to fit into your busy schedule."
       },
       {
         "question": "Who Should Listen to this Podcast?",
@@ -137,7 +137,7 @@ export const faqGroups = [
       {
         "question": "Does the Podcast Discuss California-Specific Laws?",
         "level": "h3",
-        "answer": "Yes, The Lem Garcia Accident Law Podcast focuses extensively on California personal injury laws, including statutes of limitations, comparative negligence rules, and insurance requirements specific to West Covina and the greater Los Angeles area. Lem Garcia explains how California laws affect injury victims' rights and the claims process in terms that are easy to understand."
+        "answer": "Yes, Car Accident Playbook With Lem Garcia focuses extensively on California personal injury laws, including statutes of limitations, comparative negligence rules, and insurance requirements specific to West Covina and the greater Los Angeles area. Lem Garcia explains how California laws affect injury victims' rights and the claims process in terms that are easy to understand."
       },
       {
         "question": "Will the Podcast Help Me Understand My Own Accident Case?",
@@ -149,11 +149,11 @@ export const faqGroups = [
 ];
 
 export const content = {
-  "heroTitle": "The Lem Garcia Accident Law Podcast",
+  "heroTitle": "Car Accident Playbook With Lem Garcia",
   "heroDescription": "Join West Covina personal injury attorney Lem Garcia as he breaks down complex legal topics, shares insider knowledge about accident claims, and answers the questions that matter most to injury victims throughout the San Gabriel Valley. Each episode delivers practical advice, real-world case insights, and empowering information to help you understand your rights and navigate the personal injury legal system with confidence.",
   "articleTitle": "Your Trusted Voice for Personal Injury Legal Guidance",
   "articleParagraphs": [
-    "The Lem Garcia Accident Law Podcast was created to bridge the gap between complex legal concepts and the everyday people who need to understand them most. After years of representing accident victims in West Covina and witnessing the confusion and anxiety that often accompanies the claims process, Lem Garcia recognized the need for accessible, honest legal education. This podcast serves as a resource for anyone who has been injured in an accident, is concerned about their legal rights, or simply wants to be prepared should the unexpected happen.",
+    "Car Accident Playbook With Lem Garcia was created to bridge the gap between complex legal concepts and the everyday people who need to understand them most. After years of representing accident victims in West Covina and witnessing the confusion and anxiety that often accompanies the claims process, Lem Garcia recognized the need for accessible, honest legal education. This podcast serves as a resource for anyone who has been injured in an accident, is concerned about their legal rights, or simply wants to be prepared should the unexpected happen.",
     "Each episode tackles real issues facing accident victims in California, from understanding fault determination on West Covina's busy streets to negotiating with major insurance carriers. Lem Garcia draws on extensive courtroom experience and actual case examples to illustrate key points, making complex legal principles understandable and actionable. Whether you are dealing with a recent car accident on the I-10, considering a claim after a slip and fall, or seeking justice for a loved one in a wrongful death case, this podcast provides the knowledge you need to make informed decisions about your legal options."
   ],
   "featuredQuote": "Knowledge is power when it comes to protecting your rights after an accident. My goal is to arm every listener with the information they need to level the playing field against insurance companies and get the justice they deserve.",
@@ -242,27 +242,27 @@ export const navigation: {
       "href": "#episodes"
     },
     {
+      "name": "Lem Garcia Law",
+      "href": "https://www.lemgarcialaw.com/",
+      "external": true
+    },
+    {
       "name": "About",
       "href": "#about"
     },
     {
-      "name": "Contact",
-      "href": "https://www.lemgarcialaw.com/contact/",
-      "external": true
-    },
-    {
       "name": "Meet Lem Garcia",
-      "href": "https://lemgarcia.attorney",
+      "href": "https://www.lemgarcia.attorney/",
       "external": true
     }
   ],
-  "ctaText": "Subscribe",
-  "ctaHref": "#subscribe"
+  "ctaText": "Contact",
+  "ctaHref": "https://www.lemgarcialaw.com/contact/"
 };
 
 export const footer = {
   "logo": "Lem Garcia Law",
-  "description": "The Lem Garcia Accident Law Podcast delivers essential legal insights and practical advice for accident victims throughout West Covina and the San Gabriel Valley. Subscribe to stay informed about your rights, learn from real case experiences, and get answers to your most pressing personal injury questions from an experienced attorney who fights for justice.",
+  "description": "Car Accident Playbook With Lem Garcia delivers essential legal insights and practical advice for accident victims throughout West Covina and the San Gabriel Valley. Subscribe to stay informed about your rights, learn from real case experiences, and get answers to your most pressing personal injury questions from an experienced attorney who fights for justice.",
   "copyright": "Lem Garcia Law",
   "socialLinks": {
     "facebook": "#",
@@ -299,7 +299,7 @@ export const awards = [
 
 export const about = {
   "title": "About Lem Garcia and The Accident Law Podcast",
-  "description": "Lem Garcia is a dedicated personal injury attorney serving West Covina, California, and surrounding communities. With years of experience representing accident victims, Lem Garcia created The Lem Garcia Accident Law Podcast to educate the public about their legal rights and provide valuable insights into the personal injury claims process. Through clear explanations and real-world examples, Lem Garcia helps listeners understand complex legal concepts and empowers them to make informed decisions after an accident. Whether you've been injured in a car crash, motorcycle collision, or slip and fall incident, this podcast offers practical guidance from an attorney who has successfully recovered millions of dollars for injury victims throughout Southern California.",
+  "description": "Lem Garcia is a dedicated personal injury attorney serving West Covina, California, and surrounding communities. With years of experience representing accident victims, Lem Garcia created Car Accident Playbook With Lem Garcia to educate the public about their legal rights and provide valuable insights into the personal injury claims process. Through clear explanations and real-world examples, Lem Garcia helps listeners understand complex legal concepts and empowers them to make informed decisions after an accident. Whether you've been injured in a car crash, motorcycle collision, or slip and fall incident, this podcast offers practical guidance from an attorney who has successfully recovered millions of dollars for injury victims throughout Southern California.",
   "highlights": [
     "Extensive experience handling car accidents, truck collisions, motorcycle crashes, and other personal injury cases in West Covina and throughout California",
     "Over $100 million recovered in compensation for personal injury clients",
@@ -313,7 +313,7 @@ export const about = {
 
 export const subscribeCTA = {
   "title": "Never Miss an Episode",
-  "description": "Subscribe to The Lem Garcia Accident Law Podcast and receive weekly insights into personal injury law, accident prevention, and legal rights for injury victims in California. Each episode provides valuable information that can help you understand the claims process, avoid common mistakes, and protect your rights after an accident. Join thousands of listeners who trust Lem Garcia for clear, practical legal guidance.",
+  "description": "Subscribe to Car Accident Playbook With Lem Garcia and receive weekly insights into personal injury law, accident prevention, and legal rights for injury victims in California. Each episode provides valuable information that can help you understand the claims process, avoid common mistakes, and protect your rights after an accident. Join thousands of listeners who trust Lem Garcia for clear, practical legal guidance.",
   "highlights": [
     "Weekly episodes covering car accidents, truck collisions, motorcycle crashes, and other personal injury topics",
     "Insights from an attorney who has recovered over $100 million for injury victims",
@@ -388,7 +388,7 @@ export const podcastTeam = [
     "role": "Host & Personal Injury Attorney",
     "photo": "/images/team-member.jpg",
     "slug": "lem-garcia",
-    "bio": "Lem Garcia is a dedicated personal injury attorney serving West Covina and throughout California. With extensive experience representing accident victims and a passion for legal education, Lem Garcia hosts The Lem Garcia Accident Law Podcast to help injury victims understand their rights and navigate the claims process with confidence.",
+    "bio": "Lem Garcia is a dedicated personal injury attorney serving West Covina and throughout California. With extensive experience representing accident victims and a passion for legal education, Lem Garcia hosts Car Accident Playbook With Lem Garcia to help injury victims understand their rights and navigate the claims process with confidence.",
     "episodes": "Host of all episodes"
   }
 ];
@@ -710,7 +710,7 @@ export const authorProfiles: Record<string, {
     bio: [
       "Lem Garcia is a dedicated personal injury attorney serving West Covina and the greater San Gabriel Valley with a commitment to fighting for accident victims' rights. With extensive experience handling complex car accident, truck collision, and wrongful death cases, Lem Garcia has built a reputation for aggressive advocacy and compassionate client service. Lem Garcia understands that accidents can devastate families financially, physically, and emotionally, which is why Lem Garcia Law approaches each case with personalized attention and a determination to secure fair compensation.",
       "Throughout his legal career, Lem Garcia has successfully represented hundreds of clients injured in motor vehicle accidents, pedestrian collisions, bicycle accidents, and premises liability cases. Lem Garcia's deep knowledge of California personal injury law, combined with his understanding of the local West Covina court system and insurance company tactics, allows him to build compelling cases that deliver results. Lem Garcia takes pride in being accessible to clients, explaining complex legal processes in clear terms, and keeping families informed every step of the way.",
-      "Beyond his legal practice, Lem Garcia is passionate about educating the West Covina community on accident prevention and legal rights through The Lem Garcia Accident Law Podcast. This platform allows Lem Garcia to share valuable insights, answer common questions, and empower listeners with knowledge that can protect them before and after an accident occurs. When not advocating for clients or recording podcast episodes, Lem Garcia is actively involved in the West Covina community and committed to making local roads safer for everyone."
+      "Beyond his legal practice, Lem Garcia is passionate about educating the West Covina community on accident prevention and legal rights through Car Accident Playbook With Lem Garcia. This platform allows Lem Garcia to share valuable insights, answer common questions, and empower listeners with knowledge that can protect them before and after an accident occurs. When not advocating for clients or recording podcast episodes, Lem Garcia is actively involved in the West Covina community and committed to making local roads safer for everyone."
 ],
     memberships: [],
     socialLinks: [],

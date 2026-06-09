@@ -71,6 +71,8 @@ const Header = ({ variant = 'dark' }: HeaderProps) => {
         <div className="hidden md:flex items-center">
           <Link
             href={navigation.ctaHref.startsWith('#') ? `/${navigation.ctaHref}` : navigation.ctaHref}
+            target={/^https?:\/\//.test(navigation.ctaHref) ? '_blank' : undefined}
+            rel={/^https?:\/\//.test(navigation.ctaHref) ? 'noopener noreferrer' : undefined}
             className={`px-6 py-2.5 rounded-lg text-base font-semibold ${buttonBg} transition-all`}
           >
             {navigation.ctaText}
@@ -117,6 +119,8 @@ const Header = ({ variant = 'dark' }: HeaderProps) => {
           })}
           <Link
             href={navigation.ctaHref.startsWith('#') ? `/${navigation.ctaHref}` : navigation.ctaHref}
+            target={/^https?:\/\//.test(navigation.ctaHref) ? '_blank' : undefined}
+            rel={/^https?:\/\//.test(navigation.ctaHref) ? 'noopener noreferrer' : undefined}
             className={`flex items-center justify-center px-6 py-3 rounded-lg text-base font-semibold ${buttonBg}`}
             onClick={() => setIsMenuOpen(false)}
           >
