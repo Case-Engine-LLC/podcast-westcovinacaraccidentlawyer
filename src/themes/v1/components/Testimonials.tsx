@@ -53,14 +53,6 @@ const Testimonials = () => {
       <div className="max-w-container mx-auto px-6 md:px-12">
         {/* Section Header */}
         <div className="mb-10 text-center">
-          {/* Rating SVG */}
-          <div className="flex justify-center mb-4">
-            <img
-              src="/icons/rating.svg"
-              alt="Rating"
-              className="h-8 md:h-10"
-            />
-          </div>
           <h2 className="text-3xl md:text-4xl font-bold text-black mb-4 leading-none">
             Reviews of {siteConfig.podcastName}
           </h2>
