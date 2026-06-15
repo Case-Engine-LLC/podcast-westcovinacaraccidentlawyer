@@ -578,37 +578,37 @@ export const trustBadges = [
   {
     "id": 1,
     "title": "Super Lawyers Rising Stars",
-    "tooltip": "Super Lawyers Rising Stars recognizes outstanding attorneys who are 40 years old or younger or have been practicing for 10 years or less. Selection is based on peer recognition, professional achievement, and independent research by Super Lawyers. Only 2.5% of attorneys in each state receive this honor.",
-    "badge": "/badges/super-lawyers-rising-star.webp",
-    "href": "#super-lawyers"
+    "tooltip": "Lemuel L. Garcia was selected to Super Lawyers Rising Stars in 2020, 2021, and 2022. The Rising Stars list recognizes outstanding attorneys who are 40 or younger or have practiced 10 years or less, based on peer recognition and independent research. No more than 2.5% of attorneys in each state receive this honor.",
+    "badge": "/badges/lem-super-lawyers-rising-star.jpg",
+    "href": "https://profiles.superlawyers.com/california/west-covina/lawyer/lemuel-l-garcia/2a7b197f-32ac-4a36-b0ee-c15b264825b8.html"
   },
   {
     "id": 2,
-    "title": "AVVO Clients' Choice Award",
-    "tooltip": "The AVVO Clients' Choice Award is presented to attorneys who have received consistently high ratings and positive reviews from clients. This recognition reflects exceptional client service, professional expertise, and a strong commitment to achieving favorable outcomes for personal injury victims.",
-    "badge": "/badges/avvo-clients-choice.png",
-    "href": "#avvo-award"
+    "title": "Featured in USA Today",
+    "tooltip": "",
+    "badge": "/badges/usa-today.png",
+    "href": ""
   },
   {
     "id": 3,
     "title": "National Trial Lawyers Top 40 Under 40",
-    "tooltip": "The National Trial Lawyers Top 40 Under 40 is an invitation-only organization composed of the top trial lawyers from each state who are under 40 years old. Membership is extended only to attorneys who demonstrate superior qualifications, trial results, and leadership in the legal profession.",
+    "tooltip": "",
     "badge": "/badges/national-trial-lawyers-top-40.png",
-    "href": "#top-40"
+    "href": ""
   },
   {
     "id": 4,
-    "title": "Million Dollar Advocates Forum",
-    "tooltip": "The Million Dollar Advocates Forum is one of the most prestigious groups of trial lawyers in the United States. Membership is limited to attorneys who have won million-dollar verdicts and settlements for their clients. Fewer than 1% of U.S. lawyers are members of this distinguished organization.",
-    "badge": "/badges/million-dollar-advocates.gif",
-    "href": "#million-dollar"
+    "title": "Featured in the Los Angeles Times",
+    "tooltip": "",
+    "badge": "/badges/la-times.jpg",
+    "href": ""
   },
   {
     "id": 5,
-    "title": "American Institute of Legal Counsel 10 Best",
-    "tooltip": "The American Institute of Legal Counsel recognizes the nation's top attorneys based on client satisfaction, peer recommendations, and professional achievement. The 10 Best designation is awarded to attorneys who demonstrate exceptional skill, ethics, and results in their practice area.",
-    "badge": "/badges/ailc-10-best.jpg",
-    "href": "#10-best"
+    "title": "Featured on Yahoo",
+    "tooltip": "",
+    "badge": "/badges/yahoo.jpg",
+    "href": ""
   }
 ];
 

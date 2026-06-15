@@ -45,7 +45,7 @@ const TrustBadges = () => {
                   alt={badge.title}
                   width={192}
                   height={192}
-                  className="h-20 w-auto object-contain"
+                  className="h-20 w-auto max-w-[160px] object-contain"
                 />
               ) : (
                 <div className="w-16 h-16 rounded-full bg-gray-100 border-2 border-gray-300 flex items-center justify-center">
@@ -54,14 +54,16 @@ const TrustBadges = () => {
               )}
             </div>
 
-            {/* Info Icon */}
-            <button
-              className="relative"
-              onMouseEnter={(e) => showTooltip(e, badge.tooltip)}
-              onMouseLeave={hideTooltip}
-            >
-              <Info size={20} className="text-gray-400 hover:text-black transition-colors" />
-            </button>
+            {/* Info Icon — only when the badge has tooltip text */}
+            {badge.tooltip && (
+              <button
+                className="relative"
+                onMouseEnter={(e) => showTooltip(e, badge.tooltip)}
+                onMouseLeave={hideTooltip}
+              >
+                <Info size={20} className="text-gray-400 hover:text-black transition-colors" />
+              </button>
+            )}
           </div>
         ))}
 
@@ -80,7 +82,7 @@ const TrustBadges = () => {
                   alt={badge.title}
                   width={192}
                   height={192}
-                  className="h-20 w-auto object-contain"
+                  className="h-20 w-auto max-w-[160px] object-contain"
                 />
               ) : (
                 <div className="w-16 h-16 rounded-full bg-gray-100 border-2 border-gray-300 flex items-center justify-center">
@@ -89,14 +91,16 @@ const TrustBadges = () => {
               )}
             </div>
 
-            {/* Info Icon */}
-            <button
-              className="relative"
-              onMouseEnter={(e) => showTooltip(e, badge.tooltip)}
-              onMouseLeave={hideTooltip}
-            >
-              <Info size={20} className="text-gray-400 hover:text-black transition-colors" />
-            </button>
+            {/* Info Icon — only when the badge has tooltip text */}
+            {badge.tooltip && (
+              <button
+                className="relative"
+                onMouseEnter={(e) => showTooltip(e, badge.tooltip)}
+                onMouseLeave={hideTooltip}
+              >
+                <Info size={20} className="text-gray-400 hover:text-black transition-colors" />
+              </button>
+            )}
           </div>
         ))}
       </div>
