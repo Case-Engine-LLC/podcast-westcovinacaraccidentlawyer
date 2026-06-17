@@ -44,13 +44,16 @@ const Hero = ({ latestEpisode }: HeroProps) => {
         />
       </figure>
 
-      {/* Attorney Image - absolutely positioned so it doesn't stretch the section */}
-      <div className="hidden md:flex absolute bottom-0 right-0 lg:right-[4%] z-[1] h-[68%] lg:h-[78%] items-end pointer-events-none">
-        <img
-          src="/attorney.png"
-          alt={content.heroTitle}
-          className="h-full w-auto object-contain object-bottom block"
-        />
+      {/* Attorney Image - anchored to the content container's right edge (not the viewport)
+          so it stays aligned with the layout on large monitors */}
+      <div className="hidden md:block absolute inset-0 z-[1] pointer-events-none">
+        <div className="relative mx-auto h-full max-w-container px-4 md:px-12">
+          <img
+            src="/attorney.png"
+            alt={content.heroTitle}
+            className="absolute bottom-0 right-4 md:right-12 h-[68%] lg:h-[78%] w-auto object-contain object-bottom block"
+          />
+        </div>
       </div>
 
       {/* Marquee Banner */}
