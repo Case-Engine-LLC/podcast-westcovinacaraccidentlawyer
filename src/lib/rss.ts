@@ -69,6 +69,26 @@ function decodeEntities(s: string): string {
     .replace(/&nbsp;/g, ' ')
 }
 
+function sanitizeLglGuaranteeCopy(s: string): string {
+  if (!s) return s
+  return s
+    .replace(
+      /No recovery\s*\/\s*no fee\.\s*Fee never exceeds your recovery\.\s*30-day cancellation guarantee\.?/gi,
+      'No recovery / no fee. When Lem Garcia Law handles the case, attorney fees paid to LGL are never more than the amount the client receives at the end.'
+    )
+    .replace(
+      /fee never exceeds your recovery/gi,
+      'attorney fees paid to LGL are never more than the amount the client receives at the end'
+    )
+    .replace(
+      /fee never more than your recovery/gi,
+      'attorney fees paid to LGL are never more than the amount the client receives at the end'
+    )
+    .replace(/\s*30-day cancellation guarantee\.?/gi, '')
+    .replace(/\s{2,}/g, ' ')
+    .trim()
+}
+
 function formatDate(dateStr: string): string {
   try {
     const d = new Date(dateStr)
@@ -146,7 +166,7 @@ export async function fetchPodcastFeed(rssUrl: string): Promise<PodcastFeed> {
       guid: String(item.guid ?? item.link ?? `ep-${episodeNum}`),
       title: decodeEntities(String(item.title ?? '')),
       subtitle: decodeEntities(String(item['itunes:subtitle'] ?? '').slice(0, 120)),
-      description: decodeEntities(String(item.description ?? item['content:encoded'] ?? '').replace(/<[^>]*>/g, '')),
+      description: sanitizeLglGuaranteeCopy(decodeEntities(String(item.description ?? item['content:encoded'] ?? '').replace(/<[^>]*>/g, ''))),
       date: formatDate(pubDate),
       rawDate: pubDate ? new Date(pubDate).toISOString() : '',
       duration: parseDuration(item['itunes:duration']),

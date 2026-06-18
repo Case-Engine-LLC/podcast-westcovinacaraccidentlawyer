@@ -13,6 +13,26 @@ export function slugifyEpisode(title: string, fallback: string = 'episode'): str
 }
 export const REVALIDATE = parseInt(process.env.REVALIDATE_SECONDS || '3600', 10)
 
+function sanitizeLglGuaranteeCopy(s: string): string {
+  if (!s) return s
+  return s
+    .replace(
+      /No recovery\s*\/\s*no fee\.\s*Fee never exceeds your recovery\.\s*30-day cancellation guarantee\.?/gi,
+      'No recovery / no fee. When Lem Garcia Law handles the case, attorney fees paid to LGL are never more than the amount the client receives at the end.'
+    )
+    .replace(
+      /fee never exceeds your recovery/gi,
+      'attorney fees paid to LGL are never more than the amount the client receives at the end'
+    )
+    .replace(
+      /fee never more than your recovery/gi,
+      'attorney fees paid to LGL are never more than the amount the client receives at the end'
+    )
+    .replace(/\s*30-day cancellation guarantee\.?/gi, '')
+    .replace(/\s{2,}/g, ' ')
+    .trim()
+}
+
 export interface Episode {
   id: number
   slug?: string
@@ -42,7 +62,7 @@ function rssEpisodeToEpisode(ep: RSSEpisode): Episode {
     number: ep.id,
     title: ep.title,
     subtitle: ep.subtitle,
-    description: ep.description,
+    description: sanitizeLglGuaranteeCopy(ep.description),
     duration: ep.duration,
     date: ep.date,
     category: ep.category,
@@ -65,7 +85,7 @@ function normalizeStaticEpisode(ep: Record<string, unknown>): Episode {
     number: (ep.number as number) ?? (ep.id as number) ?? 1,
     title: (ep.title as string) ?? '',
     subtitle: (ep.subtitle as string) ?? '',
-    description: (ep.description as string) ?? '',
+    description: sanitizeLglGuaranteeCopy((ep.description as string) ?? ''),
     duration: (ep.duration as string) ?? '',
     date: (ep.date as string) ?? '',
     category: (ep.category as string) ?? '',
