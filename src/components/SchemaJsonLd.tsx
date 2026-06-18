@@ -103,16 +103,14 @@ const SchemaJsonLd = () => {
     logo: `${podcastUrl}/logo.svg`,
     description: footer.description,
     address: contact.address
-      ? (() => {
-          const parts = contact.address.split(',').map(s => s.trim()).filter(Boolean)
-          const addressLocality = parts[0] || undefined
-          return {
-            '@type': 'PostalAddress',
-            ...(addressLocality ? { addressLocality } : {}),
-            addressRegion: compliance.jurisdiction || parts[1] || undefined,
-            addressCountry: 'US',
-          }
-        })()
+      ? {
+          '@type': 'PostalAddress',
+          streetAddress: contact.streetAddress,
+          addressLocality: contact.city,
+          addressRegion: contact.state,
+          postalCode: contact.postalCode,
+          addressCountry: 'US',
+        }
       : undefined,
     aggregateRating: stats?.rating
       ? {

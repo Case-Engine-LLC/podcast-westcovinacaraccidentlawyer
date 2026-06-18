@@ -18,8 +18,8 @@ const AwardsSection = () => {
     },
     {
       icon: <MapPin className="w-8 h-8 text-black" />,
-      title: `${stats.casesHandled}+ Cases/Year`,
-      description: 'Over 200 personal injury cases handled annually with dedicated teams of 3-7 people per client.'
+      title: 'Cases We Handle',
+      description: 'Lem Garcia Law handles car accidents, truck accidents, motorcycle crashes, pedestrian injuries, wrongful death, dog bites, and premises liability matters.'
     }
   ]
 

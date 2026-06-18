@@ -17,7 +17,7 @@ const StatsBanner = () => {
         <p className="text-xs text-gray-400 max-w-[200px] mx-auto">{stats.satisfactionVerbalization}</p>
       </div>
       <div className="p-4">
-        <div className="font-heading text-5xl text-[#10284B] mb-2">{stats.casesHandled}+</div>
+        <div className="font-heading text-5xl text-[#10284B] mb-2">{stats.casesHandled}</div>
         <div className="text-sm font-bold uppercase tracking-widest text-[#FF9E00] mb-2">{stats.casesLabel}</div>
         <p className="text-xs text-gray-400 max-w-[200px] mx-auto">{stats.casesVerbalization}</p>
       </div>

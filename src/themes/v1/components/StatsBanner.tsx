@@ -4,7 +4,7 @@ import React from 'react'
 import { Car, MessageSquare, Star, ThumbsUp } from 'lucide-react'
 import { stats } from '@/data/siteData'
 
-// Pull a leading metric token (e.g. "$100M+") out of a label so the real
+// Pull a leading metric token (e.g. "$8M") out of a label so the real
 // number is the hero, with the remaining words as the caption.
 const splitLeadingMetric = (label?: string) => {
   const m = /^(\$?[\d.,]+\s*[KMB]?\+?)\s+(.+)$/i.exec((label || '').trim())
@@ -27,7 +27,7 @@ const StatsBanner = () => {
     recovery && stats.casesVerbalization && !/TODO/i.test(stats.casesVerbalization)
       ? { value: recovery.value, label: recovery.label, Icon: Car, outline: true }
       : stats.casesHandled && stats.casesLabel
-        ? { value: `${stats.casesHandled}+`, label: stats.casesLabel, Icon: Car, outline: true }
+        ? { value: String(stats.casesHandled), label: stats.casesLabel, Icon: Car, outline: true }
         : null,
   ].filter(
     (t): t is { value: string; label: string; Icon: typeof Star; outline?: boolean } => Boolean(t),

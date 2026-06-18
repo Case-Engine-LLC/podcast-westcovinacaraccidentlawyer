@@ -26,7 +26,7 @@ const StatsBanner = () => {
 
           <div className="p-10 rounded-2xl bg-gradient-to-br from-white/[0.03] to-transparent border border-white/5 text-center group hover:border-amber-500/30 transition-colors">
             <div className="text-6xl font-serif text-amber-500 mb-4 group-hover:scale-110 transition-transform duration-500 inline-block">
-              {stats.casesHandled}+
+              {stats.casesHandled}
             </div>
             <h3 className="text-xl font-medium text-white mb-2">{stats.casesLabel}</h3>
             <p className="text-sm text-slate-500">{stats.casesVerbalization}</p>

@@ -64,7 +64,11 @@ export const attorney = {
 };
 
 export const contact = {
-  "address": "West Covina, California",
+  "address": "1720 W. Cameron Ave., Ste. 210, West Covina, CA 91790",
+  "streetAddress": "1720 W. Cameron Ave., Ste. 210",
+  "city": "West Covina",
+  "state": "CA",
+  "postalCode": "91790",
   "phone": "(626) 337-1111",
   "email": "contact@lemgarcialaw.com",
   "website": "https://www.lemgarcialaw.com"
@@ -132,7 +136,7 @@ export const faqGroups = [
       {
         "question": "What Types of Accident Cases Does the Podcast Cover?",
         "level": "h2",
-        "answer": "The podcast covers a comprehensive range of personal injury cases including car accidents, truck accidents, motorcycle collisions, bicycle accidents, pedestrian injuries, rideshare accidents, wrongful death claims, dog bites, and slip and fall incidents. Lem Garcia draws from real cases handled at his West Covina law firm to provide practical insights and legal guidance for each type of accident."
+        "answer": "The podcast covers a comprehensive range of personal injury cases including car accidents, truck accidents, motorcycle collisions, bicycle accidents, pedestrian injuries, rideshare accidents, wrongful death claims, dog bites, and slip and fall incidents. Lem Garcia Law draws from real cases handled by the firm to provide practical insights and legal guidance for each type of accident."
       },
       {
         "question": "Does the Podcast Discuss California-Specific Laws?",
@@ -212,21 +216,19 @@ export const testimonials = [
 ];
 
 // Per California RPC 7.1, numeric claims in lawyer advertising require
-// substantiation. The Bible (2026-04-27) flags the $1.1M settlement reference
-// as NEEDS CONFIRMATION — firm to authorize which case results to publish on-air
-// and how to anonymize. casesHandled / casesLabel reflect the firm's publicly
-// stated marketing position; rating / reviewCount should be re-pointed to
-// verified Google Business Profile counts before launch.
+// substantiation. Supabase lists notable Lem Garcia Law recoveries of $8M,
+// $3M, and $2.75M. LBM lists the West Covina GBP at 4.9 stars with 306 Google
+// reviews.
 export const stats = {
   "rating": 4.9,
-  "reviewCount": 200,
+  "reviewCount": 306,
   "satisfactionRate": 99,
   "satisfactionLabel": "Client Satisfaction Rate",
   "satisfactionVerbalization": "",
-  "casesHandled": 100,
-  "casesLabel": "$100M+ Recovered",
-  "casesVerbalization": "Lem Garcia has recovered millions in compensation for personal injury clients. Past results do not guarantee a similar outcome — every case depends on its specific facts and applicable California law.",
-  "ratingVerbalization": ""
+  "casesHandled": "$8M",
+  "casesLabel": "Top Listed Recovery",
+  "casesVerbalization": "Largest Supabase-listed result: an $8 million truck accident recovery. Past results do not guarantee a similar outcome; every case depends on its specific facts and applicable California law.",
+  "ratingVerbalization": "Supabase GBP data lists 306 Google reviews for Lem Garcia Law's West Covina location."
 };
 
 export const navigation: {
@@ -302,7 +304,7 @@ export const about = {
   "description": "Lem Garcia is a dedicated personal injury attorney serving West Covina, California, and surrounding communities. With years of experience representing accident victims, Lem Garcia created Car Accident Playbook With Lem Garcia to educate the public about their legal rights and provide valuable insights into the personal injury claims process. Through clear explanations and real-world examples, Lem Garcia helps listeners understand complex legal concepts and empowers them to make informed decisions after an accident. Whether you've been injured in a car crash, motorcycle collision, or slip and fall incident, this podcast offers practical guidance from an attorney who has successfully recovered millions of dollars for injury victims throughout Southern California.",
   "highlights": [
     "Extensive experience handling car accidents, truck collisions, motorcycle crashes, and other personal injury cases in West Covina and throughout California",
-    "Over $100 million recovered in compensation for personal injury clients",
+    "Supabase-listed notable case results include $8M, $3M, and $2.75M recoveries",
     "Recognized by Super Lawyers, AVVO, and the National Trial Lawyers for excellence in personal injury law",
     "Committed to providing accessible legal education through weekly podcast episodes covering timely topics in accident law",
     "Passionate advocate for injury victims' rights with a client-centered approach to legal representation",
@@ -316,7 +318,7 @@ export const subscribeCTA = {
   "description": "Subscribe to Car Accident Playbook With Lem Garcia and receive weekly insights into personal injury law, accident prevention, and legal rights for injury victims in California. Each episode provides valuable information that can help you understand the claims process, avoid common mistakes, and protect your rights after an accident. Join thousands of listeners who trust Lem Garcia for clear, practical legal guidance.",
   "highlights": [
     "Weekly episodes covering car accidents, truck collisions, motorcycle crashes, and other personal injury topics",
-    "Insights from an attorney who has recovered over $100 million for injury victims",
+    "Insights from a firm with Supabase-listed recoveries including $8M, $3M, and $2.75M results",
     "Clear explanations of California personal injury laws and insurance practices",
     "Real-world case examples and practical advice for accident victims",
     "Access to exclusive content and early episode releases for subscribers"
@@ -614,7 +616,7 @@ export const trustBadges = [
 
 export const chaptersDescription = "This episode covers essential topics from accident scene safety to insurance negotiations and legal representation."
 
-export const reviewsInstruction = "Client testimonials are collected from verified Google reviews and reflect actual experiences of personal injury clients represented by Lem Garcia Law in West Covina, California."
+export const reviewsInstruction = "Supabase GBP data lists 306 Google reviews for Lem Garcia Law's West Covina location. Individual client experiences do not guarantee future outcomes."
 
 export const episodeTopics = [
   "All",
@@ -660,7 +662,7 @@ export const formConfig = {
   heading: "Get in touch now!",
   submitText: "Send Message",
   successMessage: "Thank you! Your message has been sent. We'll get back to you within 4 hours during business days.",
-  errorMessage: "Something went wrong. Please call us directly at (626) 602-9483.",
+  errorMessage: "Something went wrong. Please call us directly at (626) 337-1111.",
   source: "podcast-website",
   campaign: "the-you-interview",
 }
