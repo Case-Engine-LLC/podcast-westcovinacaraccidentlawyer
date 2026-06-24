@@ -24,8 +24,8 @@ const PodcastSubscribeCTA = () => {
           {/* CTA Card */}
           <div className="relative bg-secondary/95 rounded-3xl mx-4 md:mx-8 overflow-visible">
             <div className="grid grid-cols-1 md:grid-cols-5 items-end relative">
-              {/* Left Side - Subject Cutout */}
-              <div className="relative md:col-span-2 md:absolute md:left-0 md:bottom-0 md:w-2/5 flex justify-center md:justify-start order-2 md:order-1">
+              {/* Right Side - Subject Cutout */}
+              <div className="relative md:col-span-2 md:absolute md:right-0 md:bottom-0 md:w-2/5 flex justify-center md:justify-end order-2 md:order-2">
                 <img
                   src="/cta-subject.png"
                   alt="Attorneys"
@@ -33,8 +33,8 @@ const PodcastSubscribeCTA = () => {
                 />
               </div>
 
-              {/* Right Side - Content */}
-              <div className="md:col-span-3 md:col-start-3 py-12 md:py-14 px-6 md:px-12 order-1 md:order-2">
+              {/* Left Side - Content */}
+              <div className="md:col-span-3 md:col-start-1 py-12 md:py-14 px-6 md:px-12 order-1 md:order-1">
                 <h3 className="text-2xl md:text-3xl font-bold text-white mb-4 leading-tight">
                   {subscribeCTA.title}
                 </h3>
