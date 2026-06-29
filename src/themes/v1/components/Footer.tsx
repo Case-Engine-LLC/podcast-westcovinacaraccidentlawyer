@@ -58,19 +58,19 @@ const Footer = () => {
             </p>
             <div className="flex items-center gap-4">
               <Link href={footer.socialLinks.twitter} className="hover:opacity-70 transition-opacity">
-                <XIcon size={20} className="text-white" />
+                <XIcon size={20} className="text-brand-yellow" />
               </Link>
               <Link href={footer.socialLinks.linkedin} className="hover:opacity-70 transition-opacity">
-                <Linkedin size={20} className="text-white" />
+                <Linkedin size={20} className="text-brand-yellow" />
               </Link>
               <Link href={footer.socialLinks.facebook} className="hover:opacity-70 transition-opacity">
-                <Facebook size={20} className="text-white" />
+                <Facebook size={20} className="text-brand-yellow" />
               </Link>
               <Link href={footer.socialLinks.instagram} className="hover:opacity-70 transition-opacity">
-                <Instagram size={20} className="text-white" />
+                <Instagram size={20} className="text-brand-yellow" />
               </Link>
               <Link href={footer.socialLinks.youtube} className="hover:opacity-70 transition-opacity">
-                <Youtube size={20} className="text-white" />
+                <Youtube size={20} className="text-brand-yellow" />
               </Link>
             </div>
           </div>

@@ -14,23 +14,23 @@ const ContactSection = () => {
             <h2 className="text-[24px] font-bold mb-12 leading-none">{formConfig.heading}</h2>
             <div className="space-y-8">
               <div className="flex gap-4">
-                <MapPin className="text-white/50 shrink-0" size={24} />
+                <MapPin className="text-brand-yellow shrink-0" size={24} />
                 <div>
-                  <p className="text-[12px] font-bold uppercase tracking-[0.96px] mb-1 opacity-50">ADDRESS</p>
+                  <p className="text-[12px] font-bold uppercase tracking-[0.96px] mb-1 text-brand-yellow">ADDRESS</p>
                   <p className="text-[18px]">{contact.address}</p>
                 </div>
               </div>
               <div className="flex gap-4">
-                <Phone className="text-white/50 shrink-0" size={24} />
+                <Phone className="text-brand-yellow shrink-0" size={24} />
                 <div>
-                  <p className="text-[12px] font-bold uppercase tracking-[0.96px] mb-1 opacity-50">PHONE</p>
+                  <p className="text-[12px] font-bold uppercase tracking-[0.96px] mb-1 text-brand-yellow">PHONE</p>
                   <a href={`tel:${contact.phone.replace(/\D/g, '')}`} className="text-[18px] hover:text-white/80 transition-colors">{contact.phone}</a>
                 </div>
               </div>
               <div className="flex gap-4">
-                <Mail className="text-white/50 shrink-0" size={24} />
+                <Mail className="text-brand-yellow shrink-0" size={24} />
                 <div>
-                  <p className="text-[12px] font-bold uppercase tracking-[0.96px] mb-1 opacity-50">EMAIL</p>
+                  <p className="text-[12px] font-bold uppercase tracking-[0.96px] mb-1 text-brand-yellow">EMAIL</p>
                   <a href={`mailto:${contact.email}`} className="text-[18px] hover:text-white/80 transition-colors">{contact.email}</a>
                 </div>
               </div>
@@ -41,7 +41,7 @@ const ContactSection = () => {
             <p className="text-[16px] text-black/70 mb-8 max-w-lg">
               Talk directly with the {contact.website.replace(/^https?:\/\/(www\.)?/, '').replace(/\/.*$/, '')} team about your case. Free consultation, no obligation — your case stays with the firm, not the podcast.
             </p>
-            <a href={firmContactUrl} target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-2 bg-black text-white px-8 py-4 rounded-[3px] font-bold text-[14px] uppercase tracking-[0.7px] hover:bg-black/80 transition-all self-start">
+            <a href={firmContactUrl} target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-2 bg-brand-yellow text-primary px-8 py-4 rounded-[3px] font-bold text-[14px] uppercase tracking-[0.7px] hover:bg-brand-yellow-hover transition-all self-start">
               Contact the Firm
               <ArrowUpRight size={16} />
             </a>

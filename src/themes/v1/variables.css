@@ -15,6 +15,11 @@
   --color-secondary-hover: #00A0BF;
   --color-secondary-deep: #007F99;
 
+  /* Brand yellow */
+  --color-yellow: #FFEA00;
+  --color-yellow-hover: #E6D200;
+  --color-yellow-deep: #CCBA00;
+
   /* Accent & Neutral Colors */
   --color-accent: #161E4C;
   --color-background: #ffffff;

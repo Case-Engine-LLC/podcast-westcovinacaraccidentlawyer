@@ -52,22 +52,22 @@ const StatsBanner = () => {
     <section className="relative overflow-hidden bg-primary py-10 md:py-14">
       {/* depth + accent ambience */}
       <div aria-hidden className="absolute inset-0 bg-gradient-to-br from-[#1c2659] via-primary to-[#0d1338]" />
-      <div aria-hidden className="absolute -right-20 -top-28 h-96 w-96 rounded-full bg-secondary/15 blur-[110px]" />
-      <div aria-hidden className="absolute -bottom-32 -left-24 h-96 w-96 rounded-full bg-secondary/10 blur-[120px]" />
-      <div aria-hidden className="absolute inset-x-0 top-0 h-px bg-gradient-to-r from-transparent via-secondary/50 to-transparent" />
+      <div aria-hidden className="absolute -right-20 -top-28 h-96 w-96 rounded-full bg-brand-yellow/15 blur-[110px]" />
+      <div aria-hidden className="absolute -bottom-32 -left-24 h-96 w-96 rounded-full bg-brand-yellow/10 blur-[120px]" />
+      <div aria-hidden className="absolute inset-x-0 top-0 h-px bg-gradient-to-r from-transparent via-brand-yellow/50 to-transparent" />
 
       <div className="relative mx-auto max-w-container px-6 md:px-12">
         <div className={`mx-auto grid ${colsClass} gap-x-6 gap-y-12`}>
           {tiles.map(({ value, label, Icon, outline }) => (
             <div key={label} className="group flex flex-col items-center text-center">
-              <div className="mb-5 inline-flex h-14 w-14 items-center justify-center rounded-2xl bg-secondary/15 text-secondary ring-1 ring-secondary/30 transition-colors duration-300 group-hover:bg-secondary group-hover:text-primary">
+              <div className="mb-5 inline-flex h-14 w-14 items-center justify-center rounded-2xl bg-brand-yellow/15 text-brand-yellow ring-1 ring-brand-yellow/30 transition-colors duration-300 group-hover:bg-brand-yellow group-hover:text-primary">
                 {outline ? (
                   <Icon size={26} strokeWidth={2} />
                 ) : (
                   <Icon size={24} fill="currentColor" strokeWidth={0} />
                 )}
               </div>
-              <span className="text-5xl font-extrabold leading-none tracking-tight text-secondary tabular-nums transition-transform duration-300 group-hover:-translate-y-0.5 md:text-6xl">
+              <span className="text-5xl font-extrabold leading-none tracking-tight text-brand-yellow tabular-nums transition-transform duration-300 group-hover:-translate-y-0.5 md:text-6xl">
                 {value}
               </span>
               <span className="mt-3 text-sm font-semibold uppercase tracking-wide text-white/80 md:text-base">
@@ -80,7 +80,7 @@ const StatsBanner = () => {
         {footnote && (
           <>
             <div className="mx-auto mt-14 h-px max-w-3xl bg-gradient-to-r from-transparent via-white/15 to-transparent" />
-            <p className="mx-auto mt-6 max-w-3xl text-center text-xs leading-relaxed text-white/45">
+            <p className="mx-auto mt-6 max-w-5xl text-center text-xs leading-relaxed text-white/45">
               {footnote}
             </p>
           </>

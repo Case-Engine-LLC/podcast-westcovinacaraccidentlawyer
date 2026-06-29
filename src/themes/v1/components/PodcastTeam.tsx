@@ -61,7 +61,7 @@ const PodcastTeam = () => {
           </span>
           <div className="w-12 h-px bg-secondary" />
         </div>
-        <h2 className="text-3xl md:text-5xl font-bold text-white tracking-tight">
+        <h2 className="text-3xl md:text-5xl font-bold text-brand-yellow tracking-tight">
           Behind the Podcast
         </h2>
       </div>

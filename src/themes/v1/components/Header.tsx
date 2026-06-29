@@ -26,7 +26,7 @@ const Header = ({ variant = 'dark' }: HeaderProps) => {
 
   const textColor = 'text-white'
   const textHoverColor = 'hover:text-white/70'
-  const buttonBg = 'bg-white text-black hover:bg-white/90'
+  const buttonBg = 'bg-brand-yellow text-primary hover:bg-brand-yellow-hover'
   const mobileMenuBg = 'bg-black'
   const mobileBorder = 'border-white/10'
   const headerBg = isScrolled ? 'bg-black shadow-md' : 'bg-black'

@@ -67,10 +67,10 @@ const LatestEpisodes = ({ episodes: propEpisodes }: LatestEpisodesProps) => {
       <div className="max-w-container mx-auto px-6 md:px-12">
         {/* Section Header */}
         <div className="text-center mb-12 md:mb-16">
-          <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-white mb-4 leading-none">
+          <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-brand-yellow mb-4 leading-none">
             Seasons and Episodes of {siteConfig.podcastName}
           </h2>
-          <p className="text-base md:text-lg text-white/70 max-w-2xl mx-auto">
+          <p className="text-base md:text-lg text-white/70 max-w-4xl mx-auto">
             {subscribeCTA.description}
           </p>
         </div>
@@ -142,7 +142,7 @@ const LatestEpisodes = ({ episodes: propEpisodes }: LatestEpisodesProps) => {
                     {episode.topic && (
                       <span className="text-xs px-3 py-1 bg-secondary/20 text-secondary rounded-full mb-3 inline-block">{episode.topic}</span>
                     )}
-                    <h3 className="text-2xl md:text-3xl font-bold text-white mb-3 leading-tight">
+                    <h3 className="text-2xl md:text-3xl font-bold text-brand-yellow mb-3 leading-tight">
                       {episode.title}
                     </h3>
                     <p className="text-base md:text-lg text-white/70 leading-relaxed mb-4">
@@ -188,7 +188,7 @@ const LatestEpisodes = ({ episodes: propEpisodes }: LatestEpisodesProps) => {
                 <div className="text-center pt-8">
                   <button
                     onClick={() => setShowAll(true)}
-                    className="bg-white text-black px-8 py-4 rounded-xl font-semibold text-base hover:bg-white/90 transition-all"
+                    className="bg-brand-yellow text-primary px-8 py-4 rounded-xl font-semibold text-base hover:bg-brand-yellow-hover transition-all"
                   >
                     Show All {filteredEpisodes.length} Episodes
                   </button>
@@ -244,7 +244,7 @@ const LatestEpisodes = ({ episodes: propEpisodes }: LatestEpisodesProps) => {
                 <div className="text-center pt-8">
                   <button
                     onClick={() => setShowAll(true)}
-                    className="bg-white text-black px-8 py-4 rounded-xl font-semibold text-base hover:bg-white/90 transition-all"
+                    className="bg-brand-yellow text-primary px-8 py-4 rounded-xl font-semibold text-base hover:bg-brand-yellow-hover transition-all"
                   >
                     Show All {filteredEpisodes.length} Episodes
                   </button>

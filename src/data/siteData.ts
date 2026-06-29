@@ -218,17 +218,17 @@ export const testimonials = [
 // Per California RPC 7.1, numeric claims in lawyer advertising require
 // substantiation. Client registry data lists notable Lem Garcia Law recoveries
 // of $8M, $3M, and $2.75M. Local business data lists the West Covina Google
-// Business Profile at 4.9 stars with 306 Google reviews.
+// Business Profile at 4.9 stars with 330 Google reviews.
 export const stats = {
   "rating": 4.9,
-  "reviewCount": 306,
+  "reviewCount": 330,
   "satisfactionRate": 99,
   "satisfactionLabel": "Client Satisfaction Rate",
   "satisfactionVerbalization": "",
   "casesHandled": "$8M",
   "casesLabel": "Top Listed Recovery",
   "casesVerbalization": "Largest listed result: an $8 million truck accident recovery. Past results do not guarantee a similar outcome; every case depends on its specific facts and applicable California law.",
-  "ratingVerbalization": "Lem Garcia Law's West Covina location has 306 Google reviews with a 4.9 average rating."
+  "ratingVerbalization": "Lem Garcia Law's West Covina location has 330 Google reviews with a 4.9 average rating."
 };
 
 export const navigation: {
@@ -616,7 +616,7 @@ export const trustBadges = [
 
 export const chaptersDescription = "This episode covers essential topics from accident scene safety to insurance negotiations and legal representation."
 
-export const reviewsInstruction = "Lem Garcia Law's West Covina location has 306 Google reviews with a 4.9 average rating. Individual client experiences do not guarantee future outcomes."
+export const reviewsInstruction = "Lem Garcia Law's West Covina location has 330 Google reviews with a 4.9 average rating. Individual client experiences do not guarantee future outcomes."
 
 export const episodeTopics = [
   "All",

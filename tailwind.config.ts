@@ -12,6 +12,8 @@ const config: Config = {
       colors: {
         primary: 'var(--color-primary)',
         secondary: 'var(--color-secondary)',
+        'brand-yellow': 'var(--color-yellow)',
+        'brand-yellow-hover': 'var(--color-yellow-hover)',
         accent: 'var(--color-accent)',
         background: 'var(--color-background)',
         foreground: 'var(--color-foreground)',

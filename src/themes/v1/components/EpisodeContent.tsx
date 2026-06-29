@@ -1,7 +1,7 @@
 'use client'
 
 import React, { useState } from 'react'
-import { Play } from 'lucide-react'
+import { Play, Quote } from 'lucide-react'
 import { content, attorney } from '@/data/siteData'
 import { episodeTranscript as staticTranscript } from '@/data/transcript'
 import type { Episode } from '@/lib/data'
@@ -93,7 +93,7 @@ const EpisodeContent = ({ episode, transcript }: EpisodeContentProps) => {
             {/* Overview Tab */}
             {activeTab === 'Overview' && (
               <>
-                <h2 className="text-3xl md:text-4xl font-bold text-white mb-6">
+                <h2 className="text-3xl md:text-4xl font-bold text-brand-yellow mb-6">
                   {content.articleTitle}
                 </h2>
 
@@ -103,13 +103,18 @@ const EpisodeContent = ({ episode, transcript }: EpisodeContentProps) => {
                   ))}
                 </div>
 
-                <div className="bg-[#2a2a3e] rounded-3xl p-8 md:p-12 mb-8 relative">
-                  <div className="text-white/20 text-[80px] md:text-[100px] font-bold leading-[0.7] -mb-2">"</div>
-                  <p className="text-lg md:text-xl text-white leading-relaxed">
+                <figure className="relative overflow-hidden rounded-3xl border-l-4 border-brand-yellow bg-gradient-to-br from-[#1c2659] via-primary to-[#0d1338] p-8 md:p-12 mb-8 ring-1 ring-white/5">
+                  <span className="inline-flex h-12 w-12 items-center justify-center rounded-xl bg-brand-yellow/15 ring-1 ring-brand-yellow/30 mb-6">
+                    <Quote className="h-6 w-6 text-brand-yellow" fill="currentColor" strokeWidth={0} />
+                  </span>
+                  <blockquote className="text-lg md:text-2xl font-medium text-white leading-relaxed">
                     {content.featuredQuote}
-                  </p>
-                  <p className="text-white/50 mt-4">— {attorney.name}</p>
-                </div>
+                  </blockquote>
+                  <figcaption className="mt-6 flex items-center gap-3">
+                    <span className="h-px w-8 bg-brand-yellow" />
+                    <span className="text-sm font-semibold uppercase tracking-wide text-brand-yellow">{attorney.name}</span>
+                  </figcaption>
+                </figure>
 
                 {content.additionalParagraphs.length > 0 && (
                   <div className="text-base md:text-lg leading-relaxed text-white/70 space-y-6 mb-8">
@@ -124,7 +129,7 @@ const EpisodeContent = ({ episode, transcript }: EpisodeContentProps) => {
             {/* Transcript Tab */}
             {activeTab === 'Transcript' && (
               <>
-                <h2 className="text-3xl md:text-4xl font-bold text-white mb-6">
+                <h2 className="text-3xl md:text-4xl font-bold text-brand-yellow mb-6">
                   Episode Transcript
                 </h2>
 
@@ -132,7 +137,7 @@ const EpisodeContent = ({ episode, transcript }: EpisodeContentProps) => {
                   {episodeTranscript.slice(0, isExpanded ? episodeTranscript.length : 8).map((segment, index) => (
                     <p key={index}>
                       <span className="text-white font-semibold">[{segment.timestamp}]</span>{' '}
-                      <span className="text-secondary font-semibold">{segment.speaker}:</span>{' '}
+                      <span className="text-brand-yellow font-semibold">{segment.speaker}:</span>{' '}
                       {segment.text}
                     </p>
                   ))}
@@ -152,7 +157,7 @@ const EpisodeContent = ({ episode, transcript }: EpisodeContentProps) => {
             {/* Key Takeaways Tab */}
             {activeTab === 'Key Takeaways' && (
               <>
-                <h2 className="text-3xl md:text-4xl font-bold text-white mb-6">
+                <h2 className="text-3xl md:text-4xl font-bold text-brand-yellow mb-6">
                   Key Takeaways
                 </h2>
 
@@ -174,13 +179,18 @@ const EpisodeContent = ({ episode, transcript }: EpisodeContentProps) => {
                   <p>• The value of client-centric representation</p>
                 </div>
 
-                <div className="bg-[#2a2a3e] rounded-3xl p-8 md:p-12 mb-8 relative">
-                  <div className="text-white/20 text-[80px] md:text-[100px] font-bold leading-[0.7] -mb-2">"</div>
-                  <p className="text-lg md:text-xl text-white leading-relaxed">
+                <figure className="relative overflow-hidden rounded-3xl border-l-4 border-brand-yellow bg-gradient-to-br from-[#1c2659] via-primary to-[#0d1338] p-8 md:p-12 mb-8 ring-1 ring-white/5">
+                  <span className="inline-flex h-12 w-12 items-center justify-center rounded-xl bg-brand-yellow/15 ring-1 ring-brand-yellow/30 mb-6">
+                    <Quote className="h-6 w-6 text-brand-yellow" fill="currentColor" strokeWidth={0} />
+                  </span>
+                  <blockquote className="text-lg md:text-2xl font-medium text-white leading-relaxed">
                     {content.featuredQuote}
-                  </p>
-                  <p className="text-white/50 mt-4">— {attorney.name}, {attorney.firm}</p>
-                </div>
+                  </blockquote>
+                  <figcaption className="mt-6 flex items-center gap-3">
+                    <span className="h-px w-8 bg-brand-yellow" />
+                    <span className="text-sm font-semibold uppercase tracking-wide text-brand-yellow">{attorney.name}, {attorney.firm}</span>
+                  </figcaption>
+                </figure>
               </>
             )}
           </div>
