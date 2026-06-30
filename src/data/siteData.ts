@@ -6,7 +6,7 @@
 export const siteConfig = {
   "podcastName": "Car Accident Playbook With Lem Garcia",
   "tagline": "NEW EPISODE",
-  "podcastUrl": "https://podcast-westcovinacaraccidentlawyer.vercel.app",
+  "podcastUrl": "https://www.caraccidentplaybook.lawyer",
   "platformLinks": {
     "apple": "https://podcasts.apple.com/us/channel/lem-garcia/id6769300227",
     "spotify": "https://open.spotify.com/show/2slppQw4yYc57jlY4UIHCn"
