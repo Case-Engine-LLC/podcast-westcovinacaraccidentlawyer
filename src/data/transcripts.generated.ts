@@ -38,6 +38,7 @@
  * falls back to RSS-derived title/description, and the Transcript tab resolves
  * via guid. */
 import type { TranscriptSegment } from '@/lib/rss'
+import { episodeTranscript as episode5Transcript } from '@/data/transcript-ep5.generated'
 
 export const generatedTranscripts: Record<number, TranscriptSegment[]> = {
   1: [
@@ -425,6 +426,7 @@ export const generatedTranscripts: Record<number, TranscriptSegment[]> = {
     { timestamp: "43:50", speaker: "Lem", text: "I want them to remember that by calling us, they're making a right decision, of course, that they'll get their answers to their questions, and we really, from top to down, for everyone in the office, we want to give them the peace of mind and guidance that they're looking for so that, they can really make the best decision for themselves and their family" },
     { timestamp: "44:20", speaker: "Abby", text: "If you have been injured in a crash anywhere in the San Gabriel Valley, the consultation is free and you owe nothing unless there is a recovery. So call Lem Garcia and the team at Lem Garcia Law at 626-337-1111 or reach out anytime at www.lemgarcialaw.com. Thanks for listening to Car Accident Playbook. We will see you on the next episode" },
   ],
+  5: episode5Transcript,
 }
 
 export const TRANSCRIPTS_BY_GUID: Record<string, TranscriptSegment[]> = {
@@ -432,4 +434,5 @@ export const TRANSCRIPTS_BY_GUID: Record<string, TranscriptSegment[]> = {
   'flightcast:01KSTQXQC3WWZJ758SPPF8EKG5': generatedTranscripts[2],
   'flightcast:01KV8TV5P4ZC3AZGHW66A1ES68': generatedTranscripts[3],
   'flightcast:01KVXAS1P2WTKDNJABMF1D3J0K': generatedTranscripts[4],
+  "flightcast:01KY57A3R4XAXF2863Z2720ECB": episode5Transcript,
 }
