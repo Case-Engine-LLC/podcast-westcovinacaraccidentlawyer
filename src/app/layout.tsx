@@ -30,6 +30,9 @@ export const metadata: Metadata = {
     template: `%s | ${TITLE}`,
   },
   description: DESCRIPTION,
+  verification: {
+    google: 'mqPhPZk_WsFffDoA4gIEUvN3XjZHpEM4cGdD5Efk2s0',
+  },
   applicationName: TITLE,
   authors: [{ name: HOST_NAME, url: contact.website || SITE_URL }],
   keywords: [
