@@ -14,7 +14,7 @@ const Hero = () => {
         <div className="space-y-8">
           <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-[#FF9E00]/20 text-[#10284B] text-xs font-bold tracking-wider uppercase">
             <span className="w-2 h-2 rounded-full bg-[#10284B] animate-pulse" />
-            {siteConfig.tagline || 'New Episodes Weekly'}
+            {siteConfig.tagline || 'New Episodes'}
           </div>
 
           <h1 className="font-heading text-6xl md:text-7xl lg:text-[5.5rem] leading-[0.9] text-[#10284B]">

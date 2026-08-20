@@ -115,7 +115,7 @@ export const faqGroups = [
       {
         "question": "How Often are New Episodes Released?",
         "level": "h3",
-        "answer": "New episodes of Car Accident Playbook With Lem Garcia are released weekly, covering timely topics in personal injury law, recent case developments, and practical advice for accident victims. Each episode is designed to be informative yet accessible, typically running 20-30 minutes to fit into your busy schedule."
+        "answer": "New episodes of Car Accident Playbook With Lem Garcia are released on an ongoing basis and cover timely topics in personal injury law, recent case developments, and practical advice for accident victims. Each episode is designed to be informative yet accessible, typically running 20-30 minutes to fit into your busy schedule."
       },
       {
         "question": "Who Should Listen to this Podcast?",
@@ -306,7 +306,7 @@ export const about = {
     "Extensive experience handling car accidents, truck collisions, motorcycle crashes, and other personal injury cases in West Covina and throughout California",
     "Listed notable case results include $8M, $3M, and $2.75M recoveries",
     "Recognized by Super Lawyers, AVVO, and the National Trial Lawyers for excellence in personal injury law",
-    "Committed to providing accessible legal education through weekly podcast episodes covering timely topics in accident law",
+    "Committed to providing accessible legal education through podcast episodes covering timely topics in accident law",
     "Passionate advocate for injury victims' rights with a client-centered approach to legal representation",
     "Deep knowledge of California personal injury laws, insurance practices, and negotiation strategies"
   ],
@@ -315,9 +315,9 @@ export const about = {
 
 export const subscribeCTA = {
   "title": "Never Miss an Episode",
-  "description": "Subscribe to Car Accident Playbook With Lem Garcia and receive weekly insights into personal injury law, accident prevention, and legal rights for injury victims in California. Each episode provides valuable information that can help you understand the claims process, avoid common mistakes, and protect your rights after an accident. Join thousands of listeners who trust Lem Garcia for clear, practical legal guidance.",
+  "description": "Subscribe to Car Accident Playbook With Lem Garcia and receive practical insights into personal injury law, accident prevention, and legal rights for injury victims in California. Each episode provides valuable information that can help you understand the claims process, avoid common mistakes, and protect your rights after an accident. Join thousands of listeners who trust Lem Garcia for clear, practical legal guidance.",
   "highlights": [
-    "Weekly episodes covering car accidents, truck collisions, motorcycle crashes, and other personal injury topics",
+    "Episodes covering car accidents, truck collisions, motorcycle crashes, and other personal injury topics",
     "Insights from a firm with listed recoveries including $8M, $3M, and $2.75M results",
     "Clear explanations of California personal injury laws and insurance practices",
     "Real-world case examples and practical advice for accident victims",

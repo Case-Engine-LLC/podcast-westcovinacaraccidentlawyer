@@ -128,7 +128,7 @@ export default function OgImage() {
             <span style={{ display: 'flex', color: '#00BFE4' }}>·</span>
             <span style={{ display: 'flex' }}>San Gabriel Valley · North County San Diego</span>
             <span style={{ display: 'flex', color: '#00BFE4' }}>·</span>
-            <span style={{ display: 'flex' }}>Weekly podcast</span>
+            <span style={{ display: 'flex' }}>Podcast</span>
           </div>
           <div style={{ display: 'flex', color: '#00BFE4', fontWeight: 600 }}>
             {podcastDomain()}
