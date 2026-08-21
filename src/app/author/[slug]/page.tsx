@@ -1,6 +1,6 @@
 import { Metadata } from 'next'
 import V1AuthorPage from '@/themes/v1/pages/V1AuthorPage'
-import { authorProfiles, siteConfig } from '@/data/siteData'
+import { authorProfiles } from '@/data/siteData'
 
 export async function generateStaticParams() {
   return Object.keys(authorProfiles).map((slug) => ({ slug }))
@@ -11,9 +11,19 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
   const author = authorProfiles[slug]
   if (!author) return { title: 'Author Not Found' }
 
+  const canonicalPath = `/author/${slug}`
+
   return {
-    title: `${author.name} — ${author.title} | ${siteConfig.podcastName}`,
+    title: `${author.name} — ${author.title}`,
     description: author.bio[0],
+    // Self-referential canonical. Without it the layout's `canonical: '/'`
+    // is inherited and every author page declares itself a duplicate of home.
+    alternates: {
+      canonical: canonicalPath,
+    },
+    openGraph: {
+      url: canonicalPath,
+    },
   }
 }
 
