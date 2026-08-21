@@ -22,14 +22,7 @@ const SITE_URL = contact.website
 const homeSchema = {
   '@context': 'https://schema.org',
   '@graph': [
-    {
-      '@type': 'WebSite',
-      '@id': `${SITE_URL}/#website`,
-      'url': SITE_URL,
-      'name': siteConfig.podcastName,
-      'inLanguage': 'en',
-      'publisher': { '@id': `${SITE_URL}/#org` },
-    },
+    
     {
       '@type': ['LegalService', 'Organization'],
       '@id': `${SITE_URL}/#org`,
@@ -52,20 +45,7 @@ const homeSchema = {
         'name': ['headline', 'description'],
       },
     },
-    {
-      '@type': 'PodcastSeries',
-      '@id': `${SITE_URL}/#podcast`,
-      'name': siteConfig.podcastName,
-      'description': episode.description,
-      'url': SITE_URL,
-      'inLanguage': 'en',
-      'genre': ['Law', 'Personal Injury', 'Legal Education'],
-      'productionCompany': { '@id': `${SITE_URL}/#org` },
-      'speakable': {
-        '@type': 'SpeakableSpecification',
-        'name': ['name', 'description'],
-      },
-    },
+    
   ],
 }
 

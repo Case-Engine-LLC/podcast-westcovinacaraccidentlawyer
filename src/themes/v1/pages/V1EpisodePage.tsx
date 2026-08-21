@@ -46,13 +46,7 @@ export function generateEpisodeSchema(episodeId: string) {
           'name': ['name', 'description'],
         },
       },
-      {
-        '@type': 'PodcastSeries',
-        '@id': `${SITE_URL}/#podcast`,
-        'name': siteConfig.podcastName,
-        'url': SITE_URL,
-        'inLanguage': 'en',
-      },
+      
       {
         '@type': ['LegalService', 'Organization'],
         '@id': `${SITE_URL}/#org`,
