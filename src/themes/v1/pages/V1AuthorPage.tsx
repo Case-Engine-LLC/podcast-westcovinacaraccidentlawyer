@@ -21,14 +21,7 @@ export function generateAuthorSchema(author: typeof authorProfiles[string], slug
   return {
     '@context': 'https://schema.org',
     '@graph': [
-      {
-        '@type': 'WebSite',
-        '@id': `${SITE_URL}/#website`,
-        'url': SITE_URL,
-        'name': siteConfig.podcastName,
-        'inLanguage': 'en',
-        'publisher': { '@id': `${SITE_URL}/#org` },
-      },
+      
       {
         '@type': ['LegalService', 'Organization'],
         '@id': `${SITE_URL}/#org`,
@@ -152,17 +145,7 @@ export function generateAuthorSchema(author: typeof authorProfiles[string], slug
         'member': { '@id': `${pageUrl}#person` },
         'organization': { '@id': `${SITE_URL}/#org` },
       },
-      {
-        '@type': 'PodcastSeries',
-        '@id': `${SITE_URL}/#podcast`,
-        'name': siteConfig.podcastName,
-        'url': SITE_URL,
-        'webFeed': SITE_URL,
-        'host': { '@id': `${pageUrl}#person` },
-        'productionCompany': { '@id': `${SITE_URL}/#org` },
-        'inLanguage': 'en',
-        'genre': ['Law', 'Personal Injury', 'Legal Education'],
-      },
+      
     ],
   }
 }
